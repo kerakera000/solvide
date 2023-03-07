@@ -6,7 +6,7 @@
   <router-view/>
 </template>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +27,5 @@ nav a {
 nav a.router-link-exact-active {
   color: #348d65;
 }
+@import "/src/assets/css/main.scss";
 </style>
