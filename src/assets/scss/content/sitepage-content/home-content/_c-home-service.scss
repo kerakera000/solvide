@@ -1,0 +1,36 @@
+@use "../../../foundation/base/f-font-family" as font;
+@use "../../../foundation/mixin/f-flex" as flex;
+@use "../../../foundation/class-mixin/f-title" as title;
+@use "../../../foundation/class-mixin/f-web" as web;
+
+.service{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 20rem;
+    @include flex.flex;
+    &__title{
+        width: 80%;
+        @include flex.flex($justify-content:flex-start);
+        @include title.title;
+    }
+    &__web{
+        width: 80%;
+        margin-top: 5rem;
+        &--title{
+            width: 100%;
+            margin-bottom: 5rem;
+            @include flex.flex;
+            &--text{
+                @include font.font-roboto-regular($fontsize:3.4rem, $color:black);
+            }
+        }
+        &--content{
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            @include flex.flex;
+            @include web.web;
+        }
+    }
+}

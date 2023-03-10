@@ -1,0 +1,30 @@
+@use "../../../foundation/base/f-font-family" as font;
+@use "../../../foundation/mixin/f-flex" as flex;
+@use "../../../foundation/class-mixin/f-title" as title;
+@use "../../../foundation/class-mixin/f-flow" as flow;
+
+.flow{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 8rem;
+    @include flex.flex;
+    &__title{
+        width: 80%;
+        margin-bottom: 5rem;
+        @include flex.flex($justify-content:flex-start);
+        @include title.title;
+    }
+    &__cnt{
+        width: 100%;
+        flex-direction: column;
+        @include flex.flex;
+        @include flow.flow;
+        &--line{
+            width: 80%;
+            height: 1px;
+            border: dashed 1px #F8B129;
+            margin: 3rem 0;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@use '../../../foundation/class-mixin/f-title' as title;
+@use '../../../foundation/mixin/f-flex' as flex;
+@use '../../../foundation/base/f-font-family' as font;
+
+.about{
+    width: 100%;
+    height: 57rem;
+    @include flex.flex($gap:20px);
+    &__img-box{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        &--light{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0.7);
+            &--img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transform: scale(1.4);
+            }
+        }
+        &--light-back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 5;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            &--img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transform: scale(1.2);
+            }
+        }
+    }
+    &__text-box{
+        width: 50%;
+        height: 100%;
+        padding-right: 15rem;
+        flex-direction: column;
+        @include flex.flex($justify-content:space-between,$gap:0rem,$align-items: flex-start);
+        &--title{
+            width: auto;
+            white-space: nowrap;
+            @include font.font-kosugimaru-regular($fontsize:4rem,$lineHeight:5rem);
+        }
+        &--text{
+            width: auto;
+            @include font.font-roboto-regular($fontsize:2rem,$lineHeight:5.5rem);
+        }
+        &--button{
+            width: 35rem;
+            height: 7rem;
+            background: linear-gradient(to right, #F8A300, #F4CF7D);;
+            border-radius: 5.3rem;
+            text-align: center;
+            @include font.font-kosugimaru-regular($fontsize:2.1rem,$color:white,);
+        }
+    }
+}

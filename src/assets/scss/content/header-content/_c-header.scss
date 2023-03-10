@@ -1,0 +1,91 @@
+@use "../../foundation/base/f-font-family" as font;
+@use "../../foundation/mixin/f-flex" as flex;
+
+.header {
+    position: fixed;
+    top: 0%;
+    height: 7rem;
+    width: 100%;
+    z-index: 999;
+
+    &__nav {
+        color: #131311;
+        height: 100%;
+        padding: 0 4rem;
+        @include flex.flex($justify-content: flex-start);
+
+        &--title {
+            @include font.font-roboto-regular($fontsize: 3.5rem);
+        }
+
+        &--list {
+            list-style: none;
+            margin-left: auto;
+            padding: 0;
+            @include flex.flex();
+
+            &--item {
+                height: 5rem;
+                width: 16rem;
+                border-radius: 2.4rem;
+                display: inline-block;
+                color: #131311;
+                @include flex.flex();
+
+                &:hover {
+                    border: solid 1px #F8B129;
+                    color: #F8B129;
+                }
+
+                &--text {
+                    text-decoration: none;
+                    font-size: 1.2em;
+                    padding: 15px;
+                    display: block;
+                    @include font.font-roboto-regular($fontsize: 2rem);
+                }
+            }
+        }
+
+        &--contact-box {
+            height: 5rem;
+            width: 16rem;
+            border: #F8B129 solid 1px;
+            color: #F8B129;
+            border-radius: 2.4rem;
+            @include flex.flex($gap: 2rem);
+
+            &:hover {
+                background-color: #F8B129;
+                color: #ffffff !important;
+            }
+
+            &--text {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 5rem;
+    left: 4rem;
+    width: 12rem;
+    height: 10rem;
+    @include flex.flex;
+    flex-direction: column;
+
+    &__text {
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    &__img {
+        width: 3rem;
+        height: 7rem;
+    }
+}

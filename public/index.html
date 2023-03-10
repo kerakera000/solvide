@@ -5,13 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Solvide</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+  <body class="body">
+    <header class="header">
+			<nav class="header__nav">
+				<h1 class="header__nav--title">Solvide</h1>
+				<ul class="header__nav--list">
+					<li class="header__nav--list--item">
+						<a class="header__nav--list--item--text" href="#">
+							SERVICE
+						</a>
+					</li>
+					<li class="header__nav--list--item">
+						<a class="header__nav--list--item--text" href="#">
+							ABOUT
+						</a>
+					</li>
+					<li class="header__nav--list--item">
+						<a class="header__nav--list--item--text" href="#">
+							Q＆A
+						</a>
+					</li>
+					<li class="header__nav--list--item">
+						<a class="header__nav--list--item--text" href="#">
+							COMPANY
+						</a>
+					</li>
+				</ul>
+				<div class="header__nav--contact-box">
+					<a class="header__nav--contact-box--text" href="#">
+						ご依頼はこちら
+						<!-- 色べた塗 -->
+					</a>
+				</div>
+			</nav>
+	  </header>
+    <div class="scroll-down">
+			<p class="scroll-down__text">Scrole Down</p>
+      <img class="scroll-down__img" src="arow.png" alt="">
+		</div>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <footer class="footer">
+      <div class="footer__title">
+          <img class="footer__title--img" src="./footer-img/footer-logo.png" alt="">
+      </div>
+      <div class="footer__nav">
+          <div class="footer__nav--text-box">
+              <p class="footer__nav--text-box--text">SERVICE</p>
+          </div>
+          <div class="footer__nav--text-box">
+              <p class="footer__nav--text-box--text">WORKS</p>
+          </div>
+          <div class="footer__nav--text-box">
+              <p class="footer__nav--text-box--text">FLOW</p>
+          </div>
+          <div class="footer__nav--text-box">
+              <p class="footer__nav--text-box--text">PROFILE</p>
+          </div>
+          <div class="footer__nav--text-box">
+              <p class="footer__nav--text-box--text">CONTACT</p>
+          </div>
+      </div>
+      <div class="footer__sns">
+          <div class="footer__sns--insta">
+              <img class="footer__sns--insta--img" src="./footer-img/footer-insta.png" alt="">
+          </div>
+          <div class="footer__sns--twitter">
+              <img class="footer__sns--twitter--img" src="./footer-img/footer-twitter.png" alt="">
+          </div>
+      </div>
+    </footer>
+    
   </body>
 </html>
