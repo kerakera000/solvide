@@ -7,16 +7,16 @@
     width: 100%;
     height: auto;
     flex-direction: column;
-    margin-top: 20rem;
+    margin-top: 15rem;
     @include flex.flex;
     &__title{
-        width: 80%;
+        width: 100%;
         @include flex.flex($justify-content:flex-start);
         @include title.title;
     }
     &__swiper{
-        width: 100%;
-        margin-top: 5rem;
+        margin: 5rem calc(50% - 50vw) 0;
+        width: 100vw;
         @include swiper.swiper;
     }
     .slide1{
@@ -27,5 +27,33 @@
     }
     .slide3{
         background-color: brown;
+    }
+}
+@media screen and (max-width: 768px) {
+    .works{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 15rem;
+        @include flex.flex;
+        &__title{
+            width: 80%;
+            @include flex.flex($justify-content:flex-start);
+            @include title.title;
+        }
+        &__swiper{
+            width: 100%;
+            margin-top: 5rem;
+            @include swiper.swiper;
+        }
+        .slide1{
+            background-color: aquamarine;
+        }
+        .slide2{
+            background-color: blueviolet;
+        }
+        .slide3{
+            background-color: brown;
+        }
     }
 }

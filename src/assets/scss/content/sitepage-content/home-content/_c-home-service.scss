@@ -10,19 +10,19 @@
     margin-top: 20rem;
     @include flex.flex;
     &__title{
-        width: 80%;
+        width: 100%;
         @include flex.flex($justify-content:flex-start);
         @include title.title;
     }
     &__web{
-        width: 80%;
+        width: 100%;
         margin-top: 5rem;
         &--title{
             width: 100%;
             margin-bottom: 5rem;
             @include flex.flex;
             &--text{
-                @include font.font-roboto-regular($fontsize:3.4rem, $color:black);
+                @include font.font-roboto-bold($fontsize:4rem, $color:black);
             }
         }
         &--content{
@@ -31,6 +31,30 @@
             flex-direction: column;
             @include flex.flex;
             @include web.web;
+            .web-under-line{
+                width: 100%;
+                height: 2px;
+                background-color: #F8B129;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .service{
+        &__title{
+            width: 80%;
+        }
+        &__web{
+            width: 80%;
+            &--title{
+                &--text{
+                    @include font.font-roboto-bold($fontsize:6rem, $color:black);
+                }
+            }
+            &--content{
+                @include flex.flex($gap:9rem);
+                @include web.web;
+            }
         }
     }
 }

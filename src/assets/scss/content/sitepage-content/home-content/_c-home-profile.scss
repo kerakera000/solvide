@@ -10,7 +10,7 @@
     margin-top: 10rem;
     @include flex.flex;
     &__title{
-        width: 80%;
+        width: 100%;
         @include flex.flex($justify-content:flex-start);
         @include title.title;
     }
@@ -64,7 +64,51 @@
                 width: 73%;
                 height: 2px;
                 margin: 5rem 0;
-                background: linear-gradient(to right, #F8A300, #a8a7a4);;
+                background: linear-gradient(to right, #F8A300, #e7c787);;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .profile{
+        margin-top: 20rem;
+        @include flex.flex;
+        &__title{
+            width: 80%;
+            @include flex.flex($justify-content:flex-start);
+            @include title.title;
+        }
+        &__cnt{
+            height: auto;
+            margin-top: 10rem;
+            &--img-box-left{
+                left: -6rem;
+                top: -17rem;
+                width: 50rem;
+                height: 50rem;
+                z-index: -1;
+                &--img{
+                    z-index: -1;
+                    object-fit: contain;
+                }
+            }
+            &--img-box-right{
+                right: -1rem;
+                bottom: -18rem;
+                width: 50rem;
+                height: 50rem;
+                z-index: -1;
+                &--img{
+                    width: 100%;
+                }
+            }
+            &--box{
+                margin-top: 15rem;
+                width: 80%;
+                gap: 3rem;
+                &--text{
+                    width: 100%;
+                }
             }
         }
     }

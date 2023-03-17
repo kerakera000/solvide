@@ -4,13 +4,10 @@
 
 .contact{
     width: 100%;
-    height: 64rem;
+    height: 53rem;
     margin-top: 20rem;
     @include flex.flex;
     &__cnt{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         gap: 2rem;
         width: 90%;
         height: 100%;
@@ -25,7 +22,7 @@
                 height: 40rem;
                 position: absolute;
                 right: -4rem;
-                bottom: 0rem;
+                bottom: -11rem;
                 z-index: -1;
                 &--img{
                     width: 100%;
@@ -37,8 +34,8 @@
                 width: 40rem;
                 height: 40rem;
                 position: absolute;
-                left: -10rem;
-                top: -13rem;
+                left: -4rem;
+                top: -10rem;
                 z-index: -1;
                 &--img{
                     width: 100%;
@@ -68,11 +65,11 @@
                 width: 100%;
                 @include flex.flex($justify-content:flex-start);
                 &__text{
-                    text-align: center;
                     font-family: 'Kosugi Maru', sans-serif;
                     font-weight: 400;
                     line-height: 7rem;
                     font-size: 4.1rem;
+                    text-align: left;
                 }
             }
             .contact-cnt{
@@ -88,7 +85,7 @@
                         font-weight: 500;
                         font-size: 2.2rem;
                         line-height: 5rem;
-                        text-align: center;
+                        text-align: left;
                     }
                 }
                 &__button-cnt{
@@ -113,13 +110,97 @@
                 width: 20rem;
                 height: 20rem;
                 position: absolute;
-                bottom: 0rem;
+                bottom: -10rem;
                 right: 9rem;
                 z-index: -1;
                 &__img{
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact{
+        height: auto;
+        margin-top: 35rem;
+        &__cnt{
+            flex-direction: column;
+            gap: 6rem;
+            position: relative;
+            &--img-box{
+                order: 2;
+                &--item-right{
+                    width: 60rem;
+                    height: 60rem;
+                    right: -30rem;
+                    bottom: -18rem;
+                    &--img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &--item-left{
+                    left: -35rem;
+                    width: 60rem;
+                    height: 60rem;
+                    &--img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &--size{
+                    &--img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .display-content{
+                display: contents;
+                .contact-title-box{
+                    order: 1;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &__text{
+                        line-height: 10rem;
+                        font-size: 5.5rem;
+                        text-align: center;
+                    }
+                }
+                .contact-cnt{
+                    display: flex;
+                    align-items: center;
+                    order: 3;
+                    &__text-box{
+                        &--text{
+                            line-height: 8rem;
+                            font-size: 3.8rem;
+                            text-align: left;
+                        }
+                    }
+                    &__button-cnt{
+                        width: 90%;
+                        &--box{
+                            width: 46rem;
+                            height: 11rem;
+                            border-radius: 5.3rem;
+                            &--text{
+                                font-size: 4.4rem;
+                            }
+                        }
+                    }
+                }
+                .contact-item{
+                    display: none;
+                    &__img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }

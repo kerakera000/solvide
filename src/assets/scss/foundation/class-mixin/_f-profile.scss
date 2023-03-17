@@ -25,4 +25,21 @@
             }
         }
     }
+    @media screen and (max-width: 768px) {
+        .profile-row{
+            width: 100%;
+            &--title{
+                width: 50%;
+                &--text{
+                    font-size: 3.8rem;
+                }
+            }
+            &--text-box{
+                width: 50%;
+                &--text{
+                    font-size: 3.8rem;
+                }
+            }
+        }
+    }
 }

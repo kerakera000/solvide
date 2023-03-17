@@ -25,10 +25,14 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    &--img{
+                    &--imgpc{
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
+                        display: block;
+                    }
+                    &--imgsp{
+                        display: none;
                     }
                 }
             }
@@ -43,6 +47,42 @@
                     font-weight: 400;
                     line-height: 3rem;
                     font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .flow-cnt{
+            gap: 14rem;
+            margin-top: 10rem;
+            flex-direction: column;
+            &__box{
+                gap: 4rem;
+                width: 90%;
+                height: auto;
+                &--img-box{
+                    padding-left: 0%;
+                    &--size{
+                        width: 50rem;
+                        height: 45rem;
+                        &--imgpc{
+                            display: none;
+                        }
+                        &--imgsp{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            display: block;
+                        }
+                    }
+                }
+                &--text-box{
+                    width: 93%;
+                    &--text{
+                        width: 63%;
+                        line-height: 6rem;
+                        font-size: 3.8rem;
+                    }
                 }
             }
         }

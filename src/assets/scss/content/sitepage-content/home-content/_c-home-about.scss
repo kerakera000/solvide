@@ -44,13 +44,16 @@
     &__text-box{
         width: 50%;
         height: 100%;
-        padding-right: 15rem;
+        padding-left: 5rem;
         flex-direction: column;
         @include flex.flex($justify-content:space-between,$gap:0rem,$align-items: flex-start);
         &--title{
             width: auto;
             white-space: nowrap;
-            @include font.font-kosugimaru-regular($fontsize:4rem,$lineHeight:5rem);
+            @include font.font-kosugimaru-regular($fontsize:4.2rem,$lineHeight:6rem);
+            color: black;
+            text-align: -webkit-center;
+            transform: translateX(-28px);
         }
         &--text{
             width: auto;
@@ -63,6 +66,56 @@
             border-radius: 5.3rem;
             text-align: center;
             @include font.font-kosugimaru-regular($fontsize:2.1rem,$color:white,);
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .about{
+        height: auto;
+        flex-direction: column;
+        gap: 7rem;
+        margin-top: 15rem;
+        &__img-box{
+            width: 100%;
+            height: 50rem;
+            &--light{
+                &--img{
+                    width: 100%;
+                }
+            }
+            &--light-back{
+                width: 50%;
+                height: 100%;
+                &--img{
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(1.5);
+                }
+            }
+        }
+        &__text-box{
+            width: 100%;
+            height: 100%;
+            padding-right: 0;
+            padding: 0 8rem;
+            flex-direction: column;
+            margin-top: 7rem;
+            @include flex.flex($justify-content:center,$gap:7rem,$align-items: center);
+            &--title{
+                width: 100%;
+                @include font.font-kosugimaru-regular($fontsize:5.3rem,$lineHeight:9rem);
+                color: black;
+                transform: translateX(-8px);
+            }
+            &--text{
+                width: 100%;
+                @include font.font-roboto-regular($fontsize:3.8rem,$lineHeight:7rem);
+            }
+            &--button{
+                width: 46rem;
+                height: 11rem;
+                @include font.font-kosugimaru-regular($fontsize:4.4rem,$color:white,);
+            }
         }
     }
 }

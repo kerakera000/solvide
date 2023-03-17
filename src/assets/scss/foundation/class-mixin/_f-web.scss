@@ -17,17 +17,17 @@
                 justify-content: center;
                 background-color: #F8B129;
                 border-radius: 28px;
-                width: 140px;
-                height: 40px;
+                width: 18rem;
+                height: 5rem;
                 &--text{
                     font-size: 2rem;
-                    font-family: '小杉丸', sans-serif;
+                    font-family: 'Kosugi Maru', sans-serif;
                     font-weight: 400;
                     color: white;
                 }
                 &--num{
                     font-size: 2rem;
-                    font-family: '小杉丸', sans-serif;
+                    font-family: 'Kosugi Maru', sans-serif;
                     font-weight: 400;
                     color: white;
                 }
@@ -66,7 +66,7 @@
                     &--text{
                         font-size: 2.4rem;
                         font-family: 'Roboto', sans-serif;
-                        font-weight: 500;
+                        font-weight: 700;
                         color: black;
                     }
                 }
@@ -77,12 +77,12 @@
                     align-items: center;
                     justify-content: center;
                     &--text{
-                        width: 80%;
-                        font-size: 1.6rem;
+                        width: 85%;
+                        font-size: 1.9rem;
                         font-family: '小杉丸', sans-serif;
                         font-weight: 400;
                         color:#333333;
-                        line-height: 2.8rem;
+                        line-height: 3.5rem;
                     }
                 }
             }
@@ -111,6 +111,75 @@
                     }
                     .web-img-4{
                         transform: scale(0.8);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .web{
+            gap: 7rem;
+            &__title{
+                &--cnt{
+                    width: 28rem;
+                    height: 7.5rem;
+                    &--text{
+                        font-size: 4rem;
+                    }
+                    &--num{
+                        font-size: 4rem;
+                    }
+                }
+            }
+            &__body{
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                height: auto;
+                gap: 0;
+                .display-content{
+                    display: contents;
+                    .web__body--title{
+                        order: 1;
+                        &--text{
+                            font-size: 4.5rem;
+                        }
+                    }
+                    .web__body--text-box{
+                        order: 3;
+                        &--text{
+                            font-size: 3.8rem;
+                            line-height: 8rem;
+                            width: 100%;
+                        }
+                    }
+                }
+                &--img-cnt{
+                    order: 2;
+                    height: auto;
+                    width: 100%;
+                    &--box{
+                        width: 60rem;
+                        height: 60rem;
+                        &--img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .web-img-1{
+                            transform: scale(0.9);
+                            object-fit: contain;
+                        }
+                        .web-img-2{
+                            transform: scale(0.8);
+                            object-fit: contain;
+                        }
+                        .web-img-3{
+                            transform: scale(1.2);
+                        }
+                        .web-img-4{
+                            transform: scale(0.7);
+                        }
                     }
                 }
             }
