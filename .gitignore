@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 /dist
-
+src/path/to/microcms.js
 
 # local env files
 .env.local

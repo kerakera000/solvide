@@ -18,7 +18,7 @@
             position: relative;
             z-index: 10;
             width: auto;
-            @include font.font-kosugimaru-regular($fontsize:4.3rem,$letterSpacing:2.3rem,$lineHeight:8rem);
+            @include font.font-kosugimaru-regular($fontsize:4.3rem,$letterSpacing:2rem,$lineHeight:8rem);
             color: black;
         }
         &--subtitle{

@@ -31,36 +31,12 @@
             :modules="modules"
             class="mySwiper"
             >
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
+            <swiper-slide class="swiper-cnt" v-for="post in posts" :key="post.id">
+                <img :src="post.img.url" alt="post.image.title">
                 <div class="swiper-cnt__text">
-                    <h2>ワイヤーフレームからアップロードまで一括管理</h2>
-                    <p>株式会社Zi;plaza/ 飲食業</p>
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.text }}</p>
                 </div>
-            </swiper-slide>
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-cnt">
-                <img src="../../assets/images/works-img/gim.png" alt="">
             </swiper-slide>
             </swiper>
         </div>
@@ -68,15 +44,25 @@
 </template>
 
 <script>
+    //スライダー
     import { Swiper, SwiperSlide } from 'swiper/vue';
     import 'swiper/css';
     import 'swiper/css/pagination';
     import 'swiper/css/navigation';
     import { Pagination, Navigation } from 'swiper';
-    
+    //cms
+    import { getPosts } from '@/microcms.js';
     export default {
         name: 'WorksComp',
 
+        data() {
+            return {
+                posts: [],
+            };
+        },
+        async created() {
+            this.posts = await getPosts();
+        },
         components: {
             Swiper,
             SwiperSlide,
