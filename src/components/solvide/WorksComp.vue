@@ -31,13 +31,34 @@
             :modules="modules"
             class="mySwiper"
             >
-            <swiper-slide class="swiper-cnt" v-for="post in posts" :key="post.id">
-                <img :src="post.img.url" alt="post.image.title">
-                <div class="swiper-cnt__text">
-                    <h2>{{ post.title }}</h2>
-                    <p>{{ post.text }}</p>
-                </div>
-            </swiper-slide>
+                <swiper-slide class="swiper-cnt">
+                    <img src="../../assets/images/works-img/higurashi.png" alt="post.image.title">
+                    <div class="swiper-cnt__text">
+                        <h2>ひぐらし不動産</h2>
+                        <p>コーディングからアップロードまで</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="swiper-cnt">
+                    <img src="../../assets/images/works-img/higurashi.png" alt="post.image.title">
+                    <div class="swiper-cnt__text">
+                        <h2>ひぐらし不動産</h2>
+                        <p>コーディングからアップロードまで</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="swiper-cnt">
+                    <img src="../../assets/images/works-img/higurashi.png" alt="post.image.title">
+                    <div class="swiper-cnt__text">
+                        <h2>ひぐらし不動産</h2>
+                        <p>コーディングからアップロードまで</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="swiper-cnt" v-for="post in posts" :key="post.id">
+                    <img :src="post.img.url" alt="post.image.title">
+                    <div class="swiper-cnt__text">
+                        <h2>{{ post.title }}</h2>
+                        <p>{{ post.text }}</p>
+                    </div>
+                </swiper-slide>
             </swiper>
         </div>
     </section>
