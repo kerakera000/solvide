@@ -21,10 +21,12 @@
                         <p class="contact-cnt__text-box--text">ご依頼、ご相談の方はココナラにて受け付けております。ご不明点等ございましたらお問い合わせください。</p>
                     </div>
                     <div class="contact-cnt__button-cnt">
-                        <div class="contact-cnt__button-cnt--box">
-                            <p class="contact-cnt__button-cnt--box--text">ココナラで依頼</p>
+                        <a href="https://coconala.com/services/2725939?a8=9b0ndbI3qWfazXA4prfOfP_.KuSmKuzatrfAXSaVK3S4Zt0zg-fbg-0QhW7VBbg3qWo4740ZiWRzh5exxs00000012624009" class="contact-cnt__button-cnt--box">
+                            <p class="contact-cnt__button-cnt--box--text">
+                                ココナラで依頼
+                            </p>
                             <img class="contact-cnt__button-cnt--box--img" src="" alt="">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="contact-item">

@@ -1,8 +1,8 @@
 <template>
-    <section class="kv">
+    <section id="top" class="kv">
         <div class="kv__text-box">
-            <h2 class="kv__text-box--title">結果につながるサイトには<br>必ず理由がある</h2>
-            <p class="kv__text-box--subtitle">Solvideはデザインからサイト構築、保守運用まで一括で担当している<br class="spbr">ホームページ制作グループです。</p>
+            <h2 class="kv__text-box--title">結果につながるサイトには<br class="pcbr">必ず理由がある</h2>
+            <p class="kv__text-box--subtitle">Solvideはデザインからサイト構築、保守運用まで一括で担当しているホームページ制作グループです。</p>
             <img class="kv__text-box--img-title-back" src="../../assets/images/kv-img/kv-title-back.png" alt="">
             <img class="kv__text-box--img-text-back" src="../../assets/images/kv-img/kv-text-back.png" alt="">
         </div>

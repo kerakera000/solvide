@@ -3,11 +3,14 @@
 @use "../../../foundation/class-mixin/f-title" as title;
 @use "../../../foundation/class-mixin/f-web" as web;
 
+#service{
+    margin-bottom: 17rem;
+}
 .service{
+    margin-top: 15rem;
     width: 100%;
     height: auto;
     flex-direction: column;
-    margin-top: 20rem;
     @include flex.flex;
     &__title{
         width: 100%;

@@ -1,4 +1,5 @@
 <template>
+    <div id="profile"></div>
     <section class="profile">
         <div class="profile__title">
             <div class="title">

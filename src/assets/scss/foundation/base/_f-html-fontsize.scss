@@ -3,7 +3,7 @@ html{
     //sp
     @media (max-width: 767px) {
         // viewport 768px のとき font-size 16px
-        font-size: calc(100vw * 6.5 / 767);
+        font-size: calc(100vw * 4.5 / 767);
     }
     @media (max-width: 600px) {
         // viewport 768px のとき font-size 16px
@@ -22,14 +22,10 @@ html{
 
     @media (min-width: 1440px) {
     // viewport 1440px のとき font-size 20px
-    font-size: calc(100vw * 6.5 / 1440);
+    font-size: calc(100vw * 7.5 / 1440);
     }
 }
 #app{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     max-width: 80%;
 }
 body{

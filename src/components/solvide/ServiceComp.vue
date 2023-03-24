@@ -1,4 +1,5 @@
 <template>
+    <div id="service"></div>
     <section class="service">
         <div class="service__title">
             <div class="title">

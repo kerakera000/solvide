@@ -27,6 +27,7 @@
         &--text-box{
             text-align: center;
             width: 15rem;
+            cursor: pointer;
             &--text{
                 font-size: 2.5rem;
             }
@@ -61,14 +62,14 @@
 
 @media screen and (max-width: 768px) {
     .footer{
-        height: 130rem;
-        gap: 20rem;
+        height: auto;
+        gap: 10rem;
         justify-content: flex-start;
         &__title{
             width: 45rem;
             height: 15rem;
-            top: 78%;
-            left: 50%;
+            top: 7%;
+            left: 21%;
             transform: translate(-50%,-50%);
             &--img{
                 width: 100%;
@@ -78,7 +79,7 @@
         &__nav{
             width: 80%;
             gap: 10rem;
-            margin-top: 16rem;
+            margin-top: 20rem;
             flex-direction: column;
             &--text-box{
                 width: 100%;
@@ -95,16 +96,19 @@
                 border: solid 1px #F8A300;
                 justify-content: center;
                 align-items: center;
+                margin-left: 0%;
                 .footer__nav--text-box--text{
                     color: #F8A300;
                 }
             }
         }
         &__sns{
-            gap: 15rem;
+            gap: 10rem;
+            margin-top: 0%;
+            margin-bottom: 10rem;
             &--insta{
-                width: 7rem;
-                height: 7rem;
+                width: 10rem;
+                height: 10rem;
                 &--img{
                     width: 100%;
                     height: 100%;
