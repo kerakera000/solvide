@@ -2,7 +2,7 @@
     <div id="profile"></div>
     <section class="profile">
         <div class="profile__title">
-            <div class="title">
+            <div class="title target">
                 <h2 class="title__main-text">プロフィール</h2>
                 <div class="title__line"></div>
                 <p class="title__sub-text">Profile</p>
@@ -15,7 +15,7 @@
             <div class="profile__cnt--img-box-right">
                 <img class="profile__cnt--img-box-right--img" src="../../assets/images/profile-img/profile-right.png" alt="">
             </div>
-            <div class="profile__cnt--box">
+            <div class="profile__cnt--box target">
                 <div class="profile-row">
                     <div class="profile-row--title">
                         <h3 class="profile-row--title--text">グループ名</h3>

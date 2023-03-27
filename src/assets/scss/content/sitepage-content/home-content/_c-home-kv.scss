@@ -17,14 +17,14 @@
             position: relative;
             z-index: 10;
             width: auto;
-            @include font.font-kosugimaru-regular($fontsize:4.3rem,$letterSpacing:2rem,$lineHeight:8rem);
+            @include font.font-kosugimaru-regular($fontsize:5.5rem,$letterSpacing:0.8rem,$lineHeight:8rem);
             color: black;
         }
         &--subtitle{
             position: relative;
             color: #252522;
             z-index: 10;
-            width: auto;
+            width: 91%;
             @include font.font-kosugimaru-regular($fontsize:2.9rem,$lineHeight:5.4rem);
         }
         &--img-title-back{
@@ -97,7 +97,7 @@
                 margin-top: 25rem;
                 margin-right: 0;
                 @include flex.flex($justify-content:center);
-                @include font.font-kosugimaru-regular($fontsize:7rem,$letterSpacing:2px,$lineHeight:12rem);
+                @include font.font-kosugimaru-regular($fontsize:6rem,$letterSpacing:2px,$lineHeight:12rem);
                 color: black;
             }
             &--subtitle{

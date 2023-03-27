@@ -2,14 +2,14 @@
     <div id="flow"></div>
     <section class="flow">
         <div class="flow__title">
-            <div class="title">
+            <div class="title target">
                 <h2 class="title__main-text">制作フロー</h2>
                 <div class="title__line"></div>
                 <p class="title__sub-text">FLOW</p>
             </div>
         </div>
         <div class="flow__cnt">
-            <div class="flow-cnt">
+            <div class="flow-cnt target">
                 <div class="flow-cnt__box">
                     <div class="flow-cnt__box--img-box">
                         <div class="flow-cnt__box--img-box--size">
@@ -45,9 +45,9 @@
                 </div>
             </div>
 
-            <div class="flow__cnt--line"></div>
+            <div class="flow__cnt--line target"></div>
 
-            <div class="flow-cnt">
+            <div class="flow-cnt target">
                 <div class="flow-cnt__box">
                     <div class="flow-cnt__box--img-box">
                         <div class="flow-cnt__box--img-box--size">

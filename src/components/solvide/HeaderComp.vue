@@ -1,5 +1,5 @@
 <template>
-    <header :class="{ 'header': true, 'active': isToggled }">
+    <header :class="{ 'header headerhiddin': true, 'active': isToggled, 'loadedheader': loadedheader }">
         <h1 class="header--title-sp"></h1>
         <nav :class="{ 'header__nav': true, 'active': isToggled }">
             <h1 class="header__nav--title" @click="gotop">Solvide</h1>
@@ -50,7 +50,8 @@
         name: 'HeaderComp',
         data() {
             return {
-                isToggled: false
+                isToggled: false,
+                loadedheader:false,
             }
         },
         methods: {
@@ -85,5 +86,19 @@
             this.isToggled = false;
             }
         },
+        mounted: function() {
+            setTimeout(() => {
+                this.loadedheader = true;
+            }, 300);
+        }
     }
 </script>
+<style lang="scss">
+.headerhiddin{
+        opacity: 0;
+}
+.loadedheader{
+    opacity: 1;
+    transition: opacity 1s ease-in-out , transform 1s ease-in-out;
+}
+</style>

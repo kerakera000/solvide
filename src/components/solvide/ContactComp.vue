@@ -1,6 +1,6 @@
 <template>
     <section class="contact">
-        <div class="contact__cnt">
+        <div class="contact__cnt target">
             <div class="contact__cnt--img-box">
                 <div class="contact__cnt--img-box--item-right">
                     <img class="contact__cnt--img-box--item-right--img" src="../../assets/images/contact-img/contact-right.png" alt="">
@@ -42,3 +42,6 @@
         name: 'ContactComp',
     }
 </script>
+
+<style lang="scss">
+</style>

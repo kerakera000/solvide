@@ -2,18 +2,18 @@
     <div id="service"></div>
     <section class="service">
         <div class="service__title">
-            <div class="title">
+            <div class="title target">
                 <h2 class="title__main-text">事業内容</h2>
                 <div class="title__line"></div>
                 <p class="title__sub-text">SERVICE</p>
             </div>
         </div>
         <div class="service__web">
-            <div class="service__web--title">
+            <div class="service__web--title target">
                 <h3 class="service__web--title--text">WEB制作</h3>
             </div>
             <div class="service__web--content">
-                <div class="web">
+                <div class="web target">
                     <div class="web__title">
                         <div class="web__title--cnt">
                             <h4 class="web__title--cnt--text">Service</h4>
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="web">
+                <div class="web target">
                     <div class="web__title">
                         <div class="web__title--cnt">
                             <h4 class="web__title--cnt--text">Service</h4>
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="web">
+                <div class="web target">
                     <div class="web__title">
                         <div class="web__title--cnt">
                             <h4 class="web__title--cnt--text">Service</h4>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="web">
+                <div class="web target">
                     <div class="web__title">
                         <div class="web__title--cnt">
                             <h4 class="web__title--cnt--text">Service</h4>
@@ -132,3 +132,6 @@
         name: 'ServiceComp',
     }
 </script>
+
+<style lang="scss">
+</style>

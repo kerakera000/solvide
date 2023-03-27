@@ -2,13 +2,13 @@
     <div id="works"></div>
     <section class="works">
         <div class="works__title">
-            <div class="title">
+            <div class="title target">
                 <h2 class="title__main-text">制作実績</h2>
                 <div class="title__line"></div>
                 <p class="title__sub-text">WORKS</p>
             </div>
         </div>
-        <div class="works__swiper">
+        <div class="works__swiper target">
             <swiper
             :spaceBetween="10"
             :loop="true"

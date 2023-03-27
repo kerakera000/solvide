@@ -26,7 +26,18 @@ html{
     }
 }
 #app{
-    max-width: 80%;
+    max-width: 85%;
+}
+// javascroll(1～20)のidと下のvisibleを追加
+.target{
+    opacity: 0;
+    transform: translateY(5rem);
+    transition: opacity 1s ease-in-out , transform 1s ease-in-out;
+}
+.view{
+    opacity: 1;
+    transform: translateY(0rem);
+    transition: opacity 1s ease-in-out , transform 1s ease-in-out;
 }
 body{
     display: flex;

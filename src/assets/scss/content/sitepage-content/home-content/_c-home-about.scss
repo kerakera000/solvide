@@ -54,11 +54,11 @@
             @include font.font-kosugimaru-regular($fontsize:4.2rem,$lineHeight:6rem);
             color: black;
             text-align: -webkit-center;
-            transform: translateX(-28px);
+            transform: translateX(-2.3rem);
         }
         &--text{
             width: auto;
-            @include font.font-roboto-regular($fontsize:2rem,$lineHeight:5.5rem);
+            @include font.font-roboto-regular($fontsize:2.3rem,$lineHeight:5.5rem);
         }
         &--button{
             width: 35rem;
