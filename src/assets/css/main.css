@@ -670,7 +670,7 @@ body {
     font-weight: 400;
     letter-spacing: normal;
     line-height: normal;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #333333;
   }
   .header__nav--contact-box {
@@ -694,12 +694,12 @@ body {
     margin: 2rem 4rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 6rem;
+    font-size: 5rem;
   }
-  .header.active {
+  .header.activeheader {
     height: 100%;
   }
-  .header__nav.active {
+  .header__nav.activeheader {
     transition: 0.4s;
     transform: translate(0rem);
   }
@@ -723,13 +723,13 @@ body {
     display: block;
     transition: 0.4s;
   }
-  .header-navsp-cnt.active .span1 {
+  .header-navsp-cnt.activeheader .span1 {
     transform: rotate(44deg) translate(7px, 9px);
   }
-  .header-navsp-cnt.active .span2 {
+  .header-navsp-cnt.activeheader .span2 {
     width: 0%;
   }
-  .header-navsp-cnt.active .span3 {
+  .header-navsp-cnt.activeheader .span3 {
     transform: rotate(-44deg) translate(6px, -9px);
   }
   .scroll-down {

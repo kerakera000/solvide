@@ -1,7 +1,7 @@
 <template>
-    <header :class="{ 'header headerhiddin': true, 'active': isToggled, 'loadedheader': loadedheader }">
+    <header :class="{ 'header headerhiddin': true, 'activeheader': isToggled, 'loadedheader': loadedheader }">
         <h1 class="header--title-sp"></h1>
-        <nav :class="{ 'header__nav': true, 'active': isToggled }">
+        <nav :class="{ 'header__nav': true, 'activeheader': isToggled }">
             <h1 class="header__nav--title" @click="gotop">Solvide</h1>
             <ul class="header__nav--list">
                 <li class="header__nav--list--item" @click="goabout">
@@ -38,7 +38,7 @@
             </div>
         </nav>
 	</header>
-    <div :class="{ 'header-navsp-cnt': true, 'active': isToggled }" @click="isToggled = !isToggled">
+    <div :class="{ 'header-navsp-cnt': true, 'activeheader': isToggled }" @click="isToggled = !isToggled">
         <span class="span1"></span>
         <span class="span2"></span>
         <span class="span3"></span>

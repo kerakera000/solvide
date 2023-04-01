@@ -148,7 +148,7 @@
                     }
                     &--text {
                         padding: 0%;
-                        @include font.font-roboto-regular($fontsize: 6rem);
+                        @include font.font-roboto-regular($fontsize: 5rem);
                     }
                 }
             }
@@ -170,15 +170,15 @@
                     margin: 2rem 4rem;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 400;
-                    font-size: 6rem;
+                    font-size: 5rem;
                 }
             }
         }
     }
-    .header.active{
+    .header.activeheader{
         height: 100%;
     }
-    .header__nav.active{
+    .header__nav.activeheader{
         transition: 0.4s;
         transform: translate(0rem);
     }
@@ -199,7 +199,7 @@
             transition: 0.4s;
         }
     }
-    .header-navsp-cnt.active{
+    .header-navsp-cnt.activeheader{
         .span1{
             transform: rotate(44deg) translate(7px, 9px);
         }

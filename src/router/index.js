@@ -1,12 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import NewSolvideView from '../views/NewSolvideView.vue'
 import KokonaraView from '../views/KokonaraView.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'solvide',
+    component: NewSolvideView
   },
   {
     path: '/solvide-kokonara',

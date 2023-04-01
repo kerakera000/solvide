@@ -1,6 +1,7 @@
 //フォント管理
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Sawarabi Gothic', sans-serif;
+//ココナラfont
 @mixin font-roboto-regular(
     $fontsize:0rem,
     $letterSpacing:normal,
@@ -55,13 +56,76 @@
     color:  $color;
 }
 
-@mixin font-(
-    $fontsize:0rem,
+//新solフォントファミリー
+// font-family: 'Noto Sans JP', sans-serif;
+@mixin font-Regular(
+    $fontsize:1.8rem,
     $letterSpacing:0px,
     $lineHeight:0rem,
     ){
-    font-family: a ;
-    font-weight: 100;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+
+@mixin font-Medium(
+    $fontsize:1.8rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+
+@mixin font-Bold(
+    $fontsize:1.8rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+
+// font-family: 'Oswald', sans-serif;
+@mixin font-Oswald-Medium(
+    $fontsize:1.8rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+
+@mixin font-Oswald-SemiBold(
+    $fontsize:1.8rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+    font-size: $fontsize;
+}
+
+@mixin font-Oswald-Bold(
+    $fontsize:1.8rem,
+    $letterSpacing:0px,
+    $lineHeight:0rem,
+    ){
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
     letter-spacing: $letterSpacing;
     line-height: $lineHeight;
     font-size: $fontsize;
