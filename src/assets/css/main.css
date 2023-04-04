@@ -405,6 +405,7 @@ html {
 
 #app {
   max-width: 85%;
+  width: 85%;
 }
 
 .target {
@@ -424,6 +425,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .pcbr {

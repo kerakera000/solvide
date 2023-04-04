@@ -1,0 +1,29 @@
+@mixin newtitle($aligin:center,$justfit:center){
+    .Ntitle{
+        display: flex;
+        align-items: $aligin;
+        justify-content: $justfit;
+        flex-direction: column;
+        h2{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            letter-spacing: 2.4px;
+            font-size: 6rem;
+        }
+        p{
+            margin-top: 7px;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.64px;
+            font-size: 1.6rem;
+        }
+        span{
+            margin-top: 7px;
+            display: block;
+            width: 8.3rem;
+            height: 2px;
+            background: transparent linear-gradient(269deg, #8524D9 0%, #C348FA 100%) 0% 0% no-repeat padding-box;
+            border-radius: 4px;
+        }
+    }
+}

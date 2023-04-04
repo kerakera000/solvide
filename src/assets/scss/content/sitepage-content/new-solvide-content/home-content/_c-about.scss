@@ -1,0 +1,139 @@
+@use "../../../../foundation/base/f-font-family" as font;
+@use "../../../../foundation/mixin/f-flex" as flex;
+@use "../../../../foundation/class-mixin/f-newcube" as newcube;
+@use "../../../../foundation/class-mixin/f-newbutton" as newbutton;
+
+.Nabout{
+    width: 100vw;
+    height: 149rem;
+    margin: 0rem calc(50% - 50vw) 0;
+    padding: 0 8rem;
+    background: rgba(145, 144, 144, 0.356);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    @include newcube.Newcube;
+    &__news{
+        width: 100%;
+        height: 8rem;
+        margin-top: 3.8rem;
+        @include flex.flex();
+        &--box{
+            width: 60%;
+            height: 100%;
+            background-color: white;
+            border-radius: 25rem;
+            padding: 0 4rem;
+            box-shadow: 0px 3px 6px #0000001A;
+            @include flex.flex($justify-content:flex-start);
+            .Nabout-day{
+                margin-right: 2rem;
+                color: #4E4E4E;
+                @include font.font-Oswald-Medium();
+            }
+            .Nabout-text{
+                color: #4E4E4E;
+                @include font.font-Notosan-Regular();
+            }
+            .Nabout-view-more{
+                color: #131311;
+                margin-left: auto;
+                @include font.font-Notosan-Bold();
+            }
+        }
+    }
+    &__title{
+        width: 100%;
+        height: 6rem;
+        margin-top: 9.5rem;
+        @include flex.flex($justify-content:flex-start);
+        flex-direction: column;
+        &--cnt{
+            width: 80%;
+            height: 100%;
+            @include flex.flex($justify-content:flex-start,$gap:1.2rem);
+            h2{
+                color: white;
+                @include font.font-Oswald-Medium($fontsize:3rem);
+            }
+            p{
+                color: white;
+                @include font.font-Notosan-Bold($fontsize:1.6rem);
+            }
+        }
+        &--line{
+            width: 80%;
+            height: 100%;
+            padding-top: 5px;
+            @include flex.flex($justify-content:flex-start,$align-items:flex-start);
+            span{
+                display: block;
+                width: 8rem;
+                height: 2px;
+                background: transparent linear-gradient(269deg, #FFFFFF 0%, #C348FA 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+    }
+    &__resolution{
+        width: 100%;
+        height: auto;
+        margin-top: 6rem;
+        @include flex.flex($justify-content:center,$align-items:flex-start);
+        &--box{
+            width: 80%;
+            height: 100%;
+            @include flex.flex($justify-content:flex-start,$align-items:flex-start);
+            &--text{
+                color: white;
+                text-shadow: 0px 6px 6px #0000001A;
+                @include font.font-Oswald-Medium($fontsize:10rem,$letterSpacing:2px);
+                span{
+                    color: #ff50f0;
+                }
+            }
+        }
+    }
+    &__cnt{
+        width: 100%;
+        height: auto;
+        margin-top: 10rem;
+        @include flex.flex($justify-content:center,$align-items:flex-start);
+        &--box{
+            width: 90%;
+            height: 100%;
+            @include flex.flex($justify-content:center,$align-items:center);
+            &--cube{
+                width: 50%;
+            }
+            &--text{
+                width: 50%;
+                p{
+                    color: white;
+                    @include font.font-Notosan-Medium($fontsize:2.4rem,$lineHeight:4.4rem,$letterSpacing:0.8px);
+                    span{
+                        @include font.font-Oswald-Bold($fontsize:2.4rem,$lineHeight:4.4rem,$letterSpacing:0.8px);
+                    }
+                }
+            }
+        }
+    }
+    &__contact{
+        width: 100%;
+        height: auto;
+        margin-top: 10rem;
+        @include flex.flex($justify-content:center,$align-items:flex-start);
+        &--box{
+            width: 90%;
+            height: 100%;
+            @include flex.flex($justify-content:center,$align-items:center);
+            &--empty{
+                width: 50%;
+                @include newbutton.Newbutton;
+            }
+        }
+    }
+    @keyframes rotate-anim {
+        0% {transform: rotateX(0) rotateY(0); }
+        100% {transform: rotateX(-360deg) rotateY(360deg); }
+    }
+}

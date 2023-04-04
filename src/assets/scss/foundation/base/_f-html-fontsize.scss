@@ -27,6 +27,7 @@ html{
 }
 #app{
     max-width: 85%;
+    width: 85%;
 }
 // javascroll(1～20)のidと下のvisibleを追加
 .target{
@@ -44,6 +45,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    width: 100%;
 }
 .pcbr{
     display: inline;

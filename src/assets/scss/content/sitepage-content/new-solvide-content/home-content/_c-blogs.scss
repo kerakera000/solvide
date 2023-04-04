@@ -1,0 +1,69 @@
+@use "../../../../foundation/base/f-font-family" as font;
+@use "../../../../foundation/class-mixin/f-newtitle" as title;
+@use "../../../../foundation/mixin/f-flex" as flex;
+@use "../../../../foundation/class-mixin/f-newbutton2" as newbutton2;
+
+.Nblogs{
+    width: 100vw;
+    margin: 0rem calc(50% - 50vw) 0;
+    background-color: white;
+    @include flex.flex($justify-content:flex-start);
+    flex-direction: column;
+    &__title{
+        width: 80%;
+        height: auto;
+        margin-top: 13rem;
+        @include flex.flex($justify-content:flex-start);
+        @include title.newtitle($justfit:flex-start,$aligin:flex-start);
+    }
+    &__cnt{
+        width: 80%;
+        height: auto;
+        margin-top: 6rem;
+        @include flex.flex($align-items:flex-start);
+        &--text-box{
+            width: 30%;
+            @include font.font-Notosan-Bold($fontsize:2rem);
+            @include flex.flex($justify-content:flex-start,$align-items:flex-start);
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        &--box{
+            width: 70%;
+            height: auto;
+            @include flex.flex();
+            flex-direction: column;
+            gap: 2rem;
+            &--blog-col{
+                width: 100%;
+                height: 13.8rem;
+                padding: 17px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 4px 10px #0000001A;
+                border-radius: 16px;
+                @include flex.flex();
+                gap: 2rem;
+                .Nblogs-img{
+                    width: 24rem;
+                    height: 100%;
+                    background-color: aqua;
+                }
+                .Nblogs-text{
+                    width: auto;
+                    p{
+                        @include font.font-Notosan-Medium($fontsize:1.6rem);
+                    }
+                    &--day{
+                        @include font.font-Oswald-Medium($fontsize:1.8rem);
+                    }
+                }
+            }
+        }
+    }
+    &__button{
+        width: 80%;
+        margin-top: 10rem;
+        @include flex.flex($justify-content:flex-end);
+        @include newbutton2.Newbutton2();
+    }
+}

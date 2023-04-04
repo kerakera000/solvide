@@ -1,0 +1,68 @@
+@mixin Newbutton2(){
+    .main-contact-btn{
+        width: 37rem;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        button{
+            width: 100%;
+            height: 10rem;
+            z-index: 2;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 3rem;
+            font-weight: 500;
+            letter-spacing: inherit;
+            line-height: inherit;
+            font-size: 3rem;
+            color: #D16EFD;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button::after{
+            content: ">";
+            width: 9rem;
+            height: 9rem;
+            font-size: 3rem;
+            border-radius: 50%;
+            position: absolute;
+            color: white;
+            border:solid 1px white ;
+            background-color: #D16EFD;
+            top: 50%;
+            left: 1%;
+            z-index: -1;
+            transition: 0.2s;
+            transform: translate(0%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .main-contact-btn:hover{
+        button{
+            color: white;
+        }
+        button::after{
+            content: ">";
+            width: 100%;
+            height: 9rem;
+            font-size: 3rem;
+            border-radius: 54px;
+            position: absolute;
+            border:solid 1px #D16EFD ;
+            background-color: #D16EFD;
+            box-shadow: 0px 3px 10px #00000029;
+            top: 50%;
+            left: 1%;
+            transition: width 0.2s;
+            transform: translate(0%,-50%);
+            padding-right: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+}
