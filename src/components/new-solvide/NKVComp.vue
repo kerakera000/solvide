@@ -1,5 +1,5 @@
 <template>
-    <section class="nkv">
+    <section id="Newtop" class="nkv">
         <div class="nkv__text-box">
             <div class="nkv__text-box--subtext">
                 <p>“会社の色”をホームページから表現していく</p>

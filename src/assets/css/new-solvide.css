@@ -373,6 +373,228 @@ th {
   font-weight: bold;
 }
 
+.Nfooter {
+  height: 312px;
+  background: rgba(67, 67, 67, 0.9725490196) 0% 0% no-repeat padding-box;
+  margin: 0rem calc(50% - 50vw) 0;
+  display: flex;
+  gap: 0rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter {
+    width: 100vw;
+    height: 140rem;
+    margin: 0rem calc(50% - 50vw) 0;
+  }
+}
+.Nfooter__cnt {
+  width: 80%;
+  height: 88%;
+  display: flex;
+  gap: 0rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt {
+    width: 95%;
+    gap: 8rem;
+    flex-direction: column;
+  }
+}
+.Nfooter__cnt--logo-box {
+  width: auto;
+  margin-top: 6rem;
+  margin-right: auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--logo-box {
+    align-items: flex-start;
+  }
+}
+.Nfooter__cnt--logo-box .Nfooter-logo--img {
+  width: 21rem;
+  height: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--logo-box .Nfooter-logo--img {
+    width: 43rem;
+    height: 8rem;
+  }
+}
+.Nfooter__cnt--logo-box .Nfooter-logo--img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Nfooter__cnt--logo-box .Nfooter-sns {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.Nfooter__cnt--logo-box .Nfooter-sns--box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 30px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  gap: 0rem;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--logo-box .Nfooter-sns--box {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+.Nfooter__cnt--logo-box .Nfooter-sns--box img {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Nfooter__cnt--col {
+  margin-top: 7rem;
+  margin-right: 4.6rem;
+  display: flex;
+  gap: 4.6rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--col {
+    margin: 0%;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.Nfooter__cnt--col .Nfooter-text {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--col .Nfooter-text {
+    justify-content: flex-start;
+    width: 50%;
+    gap: 4rem;
+  }
+}
+.Nfooter__cnt--col .Nfooter-text h3 {
+  color: white;
+  cursor: pointer;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-size: 2.6rem;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--col .Nfooter-text h3 {
+    font-size: 4.2rem;
+  }
+}
+.Nfooter__cnt--col .Nfooter-text p {
+  color: #E0E0E0;
+  cursor: pointer;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-size: 2.3rem;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--col .Nfooter-text p {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--col .col-row {
+    width: 100%;
+    flex-direction: row;
+    gap: 4.6rem;
+    justify-content: space-around;
+  }
+  .Nfooter__cnt--col .col-row h3 {
+    width: 50%;
+  }
+}
+.Nfooter__cnt--gotop {
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--gotop {
+    margin-right: 6rem;
+  }
+}
+.Nfooter__cnt--gotop button {
+  width: 9rem;
+  height: 9rem;
+  margin-top: 8rem;
+  border: solid 1px white;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.1s;
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--gotop button {
+    width: 18rem;
+    height: 18rem;
+    border: solid 1px #D16EFD;
+    background: #D16EFD 0% 0% no-repeat padding-box;
+  }
+}
+.Nfooter__cnt--gotop button::after {
+  content: "^";
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .Nfooter__cnt--gotop button::after {
+    font-size: 8rem;
+  }
+}
+.Nfooter__cnt--gotop button:hover {
+  transition: 0.1s;
+  border: solid 1px #D16EFD;
+  background: #D16EFD 0% 0% no-repeat padding-box;
+}
+.Nfooter__inc {
+  width: 100%;
+  height: 12%;
+  background-color: #222222;
+  display: flex;
+  gap: 0rem;
+  justify-content: center;
+  align-items: center;
+}
+.Nfooter__inc p {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-size: 1.2rem;
+}
+
 .nkv {
   width: 100vw;
   height: 100vh;
@@ -396,15 +618,19 @@ th {
   height: 10rem;
   z-index: 2;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 3rem;
   font-weight: 500;
   letter-spacing: inherit;
   line-height: inherit;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .nkv .main-contact-btn button {
+    font-size: 3.5rem;
+  }
 }
 .nkv .main-contact-btn button::after {
   content: ">";
@@ -423,11 +649,31 @@ th {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .nkv .main-contact-btn button::after {
+    font-size: 3.5rem;
+    content: ">";
+    width: 100%;
+    height: 9rem;
+    border-radius: 54px;
+    position: absolute;
+    border: solid 1px #D16EFD;
+    background-color: #D16EFD;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+    top: 50%;
+    left: 1%;
+    transition: width 0.2s;
+    transform: translate(0%, -50%);
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
 .nkv .main-contact-btn:hover button::after {
   content: ">";
   width: 100%;
   height: 9rem;
-  font-size: 3rem;
   border-radius: 54px;
   position: absolute;
   border: solid 1px #D16EFD;
@@ -442,6 +688,15 @@ th {
   align-items: center;
   justify-content: flex-end;
 }
+@media screen and (max-width: 768px) {
+  .nkv {
+    flex-direction: column;
+    display: flex;
+    gap: 0rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 .nkv__text-box {
   width: 41%;
   height: 100%;
@@ -453,6 +708,14 @@ th {
   gap: 2rem;
   color: white;
   padding-bottom: 4%;
+}
+@media screen and (max-width: 768px) {
+  .nkv__text-box {
+    width: 100%;
+    height: 82%;
+    padding-left: 5%;
+    justify-content: flex-end;
+  }
 }
 .nkv__text-box--subtext {
   width: 100%;
@@ -498,9 +761,22 @@ th {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .nkv__scroll {
+    width: 24rem;
+    left: 70%;
+    bottom: 16%;
+  }
+}
 .nkv__scroll--img {
   width: 7rem;
   height: 7rem;
+}
+@media screen and (max-width: 768px) {
+  .nkv__scroll--img {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 .nkv__scroll--img img {
   width: 100%;
@@ -515,7 +791,7 @@ th {
   font-weight: 500;
   letter-spacing: 1.2px;
   line-height: inherit;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .nkv-parallax-bg {
@@ -528,6 +804,11 @@ th {
   transform: translate(-50%, -50%);
   background: transparent linear-gradient(117deg, #8524D9 0%, #C348FA 45%, #31C4E6 100%) 0% 0% no-repeat padding-box;
 }
+@media screen and (max-width: 768px) {
+  .nkv-parallax-bg {
+    background: transparent linear-gradient(150deg, #8524D9 0%, #C348FA 45%, #31C4E6 100%) 0% 0% no-repeat padding-box;
+  }
+}
 .nkv-parallax-bg__cnt {
   width: 100%;
   height: 100%;
@@ -537,6 +818,12 @@ th {
   background-size: 53%;
   position: relative;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .nkv-parallax-bg__cnt {
+    background-position: 50% 30%;
+    background-size: 96%;
+  }
 }
 .nkv-parallax-bg__cnt--ball1 {
   width: 83rem;
@@ -549,6 +836,13 @@ th {
   left: -15%;
   filter: blur(1px);
 }
+@media screen and (max-width: 768px) {
+  .nkv-parallax-bg__cnt--ball1 {
+    top: -13%;
+    left: -29%;
+    background: transparent radial-gradient(closest-side at 50% 50%, #CF9CF0 0%, #A13BD8 100%) 0% 0% no-repeat padding-box;
+  }
+}
 .nkv-parallax-bg__cnt--ball2 {
   width: 38rem;
   height: 38rem;
@@ -560,6 +854,16 @@ th {
   left: 46%;
   filter: blur(1px);
 }
+@media screen and (max-width: 768px) {
+  .nkv-parallax-bg__cnt--ball2 {
+    width: 27rem;
+    height: 27rem;
+    top: 24%;
+    left: 70%;
+    filter: blur(0px);
+    background: transparent radial-gradient(closest-side at 50% 50%, #B47AF7 0%, #7F25CC 100%, #A354F1 100%) 0% 0% no-repeat padding-box;
+  }
+}
 .nkv-parallax-bg__cnt--ball3 {
   width: 38rem;
   height: 38rem;
@@ -570,6 +874,13 @@ th {
   top: 73%;
   left: 17%;
   filter: blur(1px);
+}
+@media screen and (max-width: 768px) {
+  .nkv-parallax-bg__cnt--ball3 {
+    top: 70%;
+    left: -6%;
+    background: transparent radial-gradient(closest-side at 50% 50%, #9CBCFD 0%, #648EED 100%) 0% 0% no-repeat padding-box;
+  }
 }
 
 .Nabout {
@@ -583,57 +894,11 @@ th {
           backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.Nabout .cube {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Nabout .cube__box {
-  margin: 8rem;
-  width: 25rem;
-  height: 25rem;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: rotate-anim 9s linear infinite;
-}
-.Nabout .cube__box--block {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.4rem;
-  line-height: inherit;
-  font-size: 2.5rem;
-  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1019607843);
-}
-.Nabout .cube__box--block:nth-child(1) {
-  transform: translateZ(12.5rem);
-  background: transparent linear-gradient(117deg, #D845CC 45%, #F07EE7 100%) 0% 0% no-repeat padding-box;
-}
-.Nabout .cube__box--block:nth-child(2) {
-  transform: rotateY(180deg) translateZ(12.5rem);
-  background: transparent linear-gradient(117deg, #D845CC 45%, #F07EE7 100%) 0% 0% no-repeat padding-box;
-}
-.Nabout .cube__box--block:nth-child(3) {
-  transform: rotateY(90deg) translateZ(12.5rem);
-  background: transparent linear-gradient(117deg, #DC91FD 45%, #C348FA 100%) 0% 0% no-repeat padding-box;
-}
-.Nabout .cube__box--block:nth-child(4) {
-  transform: rotateY(-90deg) translateZ(12.5rem);
-  background: transparent linear-gradient(117deg, #DC91FD 45%, #C348FA 100%) 0% 0% no-repeat padding-box;
-}
-.Nabout .cube__box--block:nth-child(5) {
-  transform: rotateX(90deg) translateZ(12.5rem);
-  background: transparent linear-gradient(117deg, #BB77F5 45%, #9B39F0 100%) 0% 0% no-repeat padding-box;
-}
-.Nabout .cube__box--block:nth-child(6) {
-  transform: rotateX(-90deg) translateZ(12.5rem);
-  background: transparent linear-gradient(117deg, #BB77F5 45%, #9B39F0 100%) 0% 0% no-repeat padding-box;
+@media screen and (max-width: 768px) {
+  .Nabout {
+    padding: 0 6rem;
+    height: auto;
+  }
 }
 .Nabout__news {
   width: 100%;
@@ -643,6 +908,15 @@ th {
   gap: 0rem;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__news {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    height: 12rem;
+    transform: translate(-50%, 0%);
+  }
 }
 .Nabout__news--box {
   width: 60%;
@@ -655,6 +929,17 @@ th {
   gap: 0rem;
   justify-content: flex-start;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__news--box {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    position: relative;
+    padding: 0 8rem;
+  }
 }
 .Nabout__news--box .Nabout-day {
   margin-right: 2rem;
@@ -682,6 +967,14 @@ th {
   line-height: inherit;
   font-size: 1.8rem;
 }
+@media screen and (max-width: 768px) {
+  .Nabout__news--box .Nabout-view-more {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+}
 .Nabout__title {
   width: 100%;
   height: 6rem;
@@ -700,6 +993,11 @@ th {
   justify-content: flex-start;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .Nabout__title--cnt {
+    width: 100%;
+  }
+}
 .Nabout__title--cnt h2 {
   color: white;
   font-family: "Oswald", sans-serif;
@@ -707,6 +1005,15 @@ th {
   letter-spacing: inherit;
   line-height: inherit;
   font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__title--cnt h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    letter-spacing: inherit;
+    line-height: inherit;
+    font-size: 4rem;
+  }
 }
 .Nabout__title--cnt p {
   color: white;
@@ -725,11 +1032,21 @@ th {
   justify-content: flex-start;
   align-items: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .Nabout__title--line {
+    width: 100%;
+  }
+}
 .Nabout__title--line span {
   display: block;
   width: 8rem;
   height: 2px;
   background: transparent linear-gradient(269deg, #FFFFFF 0%, #C348FA 100%) 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__title--line span {
+    width: 16rem;
+  }
 }
 .Nabout__resolution {
   width: 100%;
@@ -747,6 +1064,11 @@ th {
   gap: 0rem;
   justify-content: flex-start;
   align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__resolution--box {
+    width: 100%;
+  }
 }
 .Nabout__resolution--box--text {
   color: white;
@@ -777,11 +1099,79 @@ th {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .Nabout__cnt--box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 .Nabout__cnt--box--cube {
   width: 50%;
 }
+.Nabout__cnt--box--cube .cube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Nabout__cnt--box--cube .cube__box {
+  margin: 8rem;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate-anim 9s linear infinite;
+}
+.Nabout__cnt--box--cube .cube__box--block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  line-height: inherit;
+  font-size: 2.5rem;
+  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1019607843);
+}
+.Nabout__cnt--box--cube .cube__box--block:nth-child(1) {
+  transform: translateZ(12.5rem);
+  background: transparent linear-gradient(117deg, #D845CC 45%, #F07EE7 100%) 0% 0% no-repeat padding-box;
+}
+.Nabout__cnt--box--cube .cube__box--block:nth-child(2) {
+  transform: rotateY(180deg) translateZ(12.5rem);
+  background: transparent linear-gradient(117deg, #D845CC 45%, #F07EE7 100%) 0% 0% no-repeat padding-box;
+}
+.Nabout__cnt--box--cube .cube__box--block:nth-child(3) {
+  transform: rotateY(90deg) translateZ(12.5rem);
+  background: transparent linear-gradient(117deg, #DC91FD 45%, #C348FA 100%) 0% 0% no-repeat padding-box;
+}
+.Nabout__cnt--box--cube .cube__box--block:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(12.5rem);
+  background: transparent linear-gradient(117deg, #DC91FD 45%, #C348FA 100%) 0% 0% no-repeat padding-box;
+}
+.Nabout__cnt--box--cube .cube__box--block:nth-child(5) {
+  transform: rotateX(90deg) translateZ(12.5rem);
+  background: transparent linear-gradient(117deg, #BB77F5 45%, #9B39F0 100%) 0% 0% no-repeat padding-box;
+}
+.Nabout__cnt--box--cube .cube__box--block:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(12.5rem);
+  background: transparent linear-gradient(117deg, #BB77F5 45%, #9B39F0 100%) 0% 0% no-repeat padding-box;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__cnt--box--cube {
+    width: 100%;
+  }
+}
 .Nabout__cnt--box--text {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__cnt--box--text {
+    width: 100%;
+  }
 }
 .Nabout__cnt--box--text p {
   color: white;
@@ -791,6 +1181,12 @@ th {
   line-height: 4.4rem;
   font-size: 2.4rem;
 }
+@media screen and (max-width: 768px) {
+  .Nabout__cnt--box--text p {
+    font-size: 4rem;
+    line-height: 6.4rem;
+  }
+}
 .Nabout__cnt--box--text p span {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -798,10 +1194,16 @@ th {
   line-height: 4.4rem;
   font-size: 2.4rem;
 }
+@media screen and (max-width: 768px) {
+  .Nabout__cnt--box--text p span {
+    font-size: 4rem;
+  }
+}
 .Nabout__contact {
   width: 100%;
   height: auto;
   margin-top: 10rem;
+  margin-bottom: 20rem;
   display: flex;
   gap: 0rem;
   justify-content: center;
@@ -831,15 +1233,19 @@ th {
   height: 10rem;
   z-index: 2;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 3rem;
   font-weight: 500;
   letter-spacing: inherit;
   line-height: inherit;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__contact--box--empty .main-contact-btn button {
+    font-size: 3.5rem;
+  }
 }
 .Nabout__contact--box--empty .main-contact-btn button::after {
   content: ">";
@@ -858,11 +1264,31 @@ th {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .Nabout__contact--box--empty .main-contact-btn button::after {
+    font-size: 3.5rem;
+    content: ">";
+    width: 100%;
+    height: 9rem;
+    border-radius: 54px;
+    position: absolute;
+    border: solid 1px #D16EFD;
+    background-color: #D16EFD;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+    top: 50%;
+    left: 1%;
+    transition: width 0.2s;
+    transform: translate(0%, -50%);
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
 .Nabout__contact--box--empty .main-contact-btn:hover button::after {
   content: ">";
   width: 100%;
   height: 9rem;
-  font-size: 3rem;
   border-radius: 54px;
   position: absolute;
   border: solid 1px #D16EFD;
@@ -877,6 +1303,102 @@ th {
   align-items: center;
   justify-content: flex-end;
 }
+@media screen and (max-width: 768px) {
+  .Nabout__contact--box--empty {
+    display: none;
+  }
+}
+.Nabout__contact--box--empty2 {
+  width: 50%;
+}
+.Nabout__contact--box--empty2 .main-contact-btn {
+  width: 37rem;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Nabout__contact--box--empty2 .main-contact-btn button {
+  width: 100%;
+  height: 10rem;
+  z-index: 2;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__contact--box--empty2 .main-contact-btn button {
+    font-size: 3.5rem;
+  }
+}
+.Nabout__contact--box--empty2 .main-contact-btn button::after {
+  content: ">";
+  width: 9rem;
+  height: 9rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  border: solid 1px white;
+  top: 50%;
+  left: 1%;
+  z-index: -1;
+  transition: 0.2s;
+  transform: translate(0%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__contact--box--empty2 .main-contact-btn button::after {
+    font-size: 3.5rem;
+    content: ">";
+    width: 100%;
+    height: 9rem;
+    border-radius: 54px;
+    position: absolute;
+    border: solid 1px #D16EFD;
+    background-color: #D16EFD;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+    top: 50%;
+    left: 1%;
+    transition: width 0.2s;
+    transform: translate(0%, -50%);
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.Nabout__contact--box--empty2 .main-contact-btn:hover button::after {
+  content: ">";
+  width: 100%;
+  height: 9rem;
+  border-radius: 54px;
+  position: absolute;
+  border: solid 1px #D16EFD;
+  background-color: #D16EFD;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+  top: 50%;
+  left: 1%;
+  transition: width 0.2s;
+  transform: translate(0%, -50%);
+  padding-right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .Nabout__contact--box--empty2 {
+    width: 100%;
+  }
+}
 @keyframes rotate-anim {
   0% {
     transform: rotateX(0) rotateY(0);
@@ -889,7 +1411,7 @@ th {
 .Nservice {
   width: 100vw;
   margin: 0rem calc(50% - 50vw) 0;
-  background-color: white;
+  background-color: #F5F5F5;
   display: flex;
   gap: 0rem;
   justify-content: flex-start;
@@ -912,6 +1434,7 @@ th {
   font-weight: 600;
   letter-spacing: 2.4px;
   font-size: 6rem;
+  color: black;
 }
 .Nservice__title .Ntitle p {
   margin-top: 7px;
@@ -919,6 +1442,7 @@ th {
   font-weight: 700;
   letter-spacing: 0.64px;
   font-size: 1.6rem;
+  color: black;
 }
 .Nservice__title .Ntitle span {
   margin-top: 7px;
@@ -938,12 +1462,22 @@ th {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .Nservice__cnt {
+    gap: 6rem;
+  }
+}
 .Nservice__cnt--col {
   width: 90%;
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .Nservice__cnt--col {
+    display: contents;
+  }
 }
 .Nservice__cnt--col .fNservice {
   width: 50%;
@@ -957,6 +1491,11 @@ th {
   gap: 0rem;
   justify-content: center;
   align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .Nservice__cnt--col .fNservice {
+    width: 90%;
+  }
 }
 .Nservice__cnt--col .fNservice__text {
   width: 70%;
@@ -1011,9 +1550,16 @@ th {
   z-index: 1;
   transition: 0.3s;
 }
+@media screen and (max-width: 768px) {
+  .Nservice__cnt--col .fNservice__button button {
+    width: 8rem;
+    height: 8rem;
+    border: 2px solid #D16EFD;
+  }
+}
 .Nservice__cnt--col .fNservice__button button:hover {
   background-color: #D16EFD;
-  border: 3px solid white;
+  border: 2px solid white;
   transition: 0.3s;
 }
 .Nservice__cnt--col .fNservice__button button::after {
@@ -1059,15 +1605,20 @@ th {
   height: 10rem;
   z-index: 2;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: inherit;
   line-height: inherit;
-  font-size: 3rem;
   color: #D16EFD;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .Nservice__button .main-contact-btn button {
+    font-size: 3.5rem;
+    color: white;
+  }
 }
 .Nservice__button .main-contact-btn button::after {
   content: ">";
@@ -1088,6 +1639,27 @@ th {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .Nservice__button .main-contact-btn button::after {
+    font-size: 3.5rem;
+    content: ">";
+    width: 100%;
+    height: 9rem;
+    border-radius: 54px;
+    position: absolute;
+    border: solid 1px #D16EFD;
+    background-color: #D16EFD;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+    top: 50%;
+    left: 1%;
+    transition: width 0.2s;
+    transform: translate(0%, -50%);
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
 .Nservice__button .main-contact-btn:hover button {
   color: white;
 }
@@ -1095,7 +1667,6 @@ th {
   content: ">";
   width: 100%;
   height: 9rem;
-  font-size: 3rem;
   border-radius: 54px;
   position: absolute;
   border: solid 1px #D16EFD;
@@ -1114,7 +1685,7 @@ th {
 .Nwork {
   width: 100vw;
   margin: 0rem calc(50% - 50vw) 0;
-  background-color: white;
+  background-color: #F5F5F5;
   display: flex;
   gap: 0rem;
   justify-content: flex-start;
@@ -1124,7 +1695,7 @@ th {
 .Nwork__title {
   width: auto;
   height: auto;
-  margin-top: 10rem;
+  margin-top: 20rem;
 }
 .Nwork__title .Ntitle {
   display: flex;
@@ -1137,6 +1708,7 @@ th {
   font-weight: 600;
   letter-spacing: 2.4px;
   font-size: 6rem;
+  color: black;
 }
 .Nwork__title .Ntitle p {
   margin-top: 7px;
@@ -1144,6 +1716,7 @@ th {
   font-weight: 700;
   letter-spacing: 0.64px;
   font-size: 1.6rem;
+  color: black;
 }
 .Nwork__title .Ntitle span {
   margin-top: 7px;
@@ -1162,6 +1735,12 @@ th {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .Nwork__cnt {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .Nwork__cnt--card {
   width: 50%;
   height: 40rem;
@@ -1174,9 +1753,22 @@ th {
   align-items: flex-start;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .Nwork__cnt--card {
+    flex-direction: column;
+    width: 80%;
+    height: 50rem;
+    margin-bottom: 8rem;
+  }
+}
 .Nwork__cnt--card--img {
   width: 100%;
   height: 30rem;
+}
+@media screen and (max-width: 768px) {
+  .Nwork__cnt--card--img {
+    height: 36rem;
+  }
 }
 .Nwork__cnt--card--img img {
   width: 100%;
@@ -1212,12 +1804,17 @@ th {
 .Nwork__cnt--card--title {
   width: auto;
   margin-left: 2rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   letter-spacing: 0.9px;
   line-height: inherit;
   font-size: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  .Nwork__cnt--card--title {
+    font-size: 3.7rem;
+  }
 }
 .Nwork__text {
   width: auto;
@@ -1234,7 +1831,7 @@ th {
   font-weight: 500;
   letter-spacing: inherit;
   line-height: 3rem;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 .Nwork__button {
   margin-top: 6rem;
@@ -1252,15 +1849,20 @@ th {
   height: 10rem;
   z-index: 2;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: inherit;
   line-height: inherit;
-  font-size: 3rem;
   color: #D16EFD;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .Nwork__button .main-contact-btn button {
+    font-size: 3.5rem;
+    color: white;
+  }
 }
 .Nwork__button .main-contact-btn button::after {
   content: ">";
@@ -1281,6 +1883,27 @@ th {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .Nwork__button .main-contact-btn button::after {
+    font-size: 3.5rem;
+    content: ">";
+    width: 100%;
+    height: 9rem;
+    border-radius: 54px;
+    position: absolute;
+    border: solid 1px #D16EFD;
+    background-color: #D16EFD;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+    top: 50%;
+    left: 1%;
+    transition: width 0.2s;
+    transform: translate(0%, -50%);
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
 .Nwork__button .main-contact-btn:hover button {
   color: white;
 }
@@ -1288,7 +1911,6 @@ th {
   content: ">";
   width: 100%;
   height: 9rem;
-  font-size: 3rem;
   border-radius: 54px;
   position: absolute;
   border: solid 1px #D16EFD;
@@ -1307,7 +1929,7 @@ th {
 .Nblogs {
   width: 100vw;
   margin: 0rem calc(50% - 50vw) 0;
-  background-color: white;
+  background-color: #F5F5F5;
   display: flex;
   gap: 0rem;
   justify-content: flex-start;
@@ -1334,6 +1956,7 @@ th {
   font-weight: 600;
   letter-spacing: 2.4px;
   font-size: 6rem;
+  color: black;
 }
 .Nblogs__title .Ntitle p {
   margin-top: 7px;
@@ -1341,6 +1964,7 @@ th {
   font-weight: 700;
   letter-spacing: 0.64px;
   font-size: 1.6rem;
+  color: black;
 }
 .Nblogs__title .Ntitle span {
   margin-top: 7px;
@@ -1349,6 +1973,11 @@ th {
   height: 2px;
   background: transparent linear-gradient(269deg, #8524D9 0%, #C348FA 100%) 0% 0% no-repeat padding-box;
   border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .Nblogs__title {
+    width: 90%;
+  }
 }
 .Nblogs__cnt {
   width: 80%;
@@ -1359,8 +1988,14 @@ th {
   justify-content: center;
   align-items: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .Nblogs__cnt {
+    flex-direction: column;
+    width: 90%;
+  }
+}
 .Nblogs__cnt--text-box {
-  width: 30%;
+  width: 20%;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   letter-spacing: inherit;
@@ -1373,8 +2008,15 @@ th {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .Nblogs__cnt--text-box {
+    width: 80%;
+    font-size: 2.5rem;
+    flex-direction: row;
+  }
+}
 .Nblogs__cnt--box {
-  width: 70%;
+  width: 80%;
   height: auto;
   display: flex;
   gap: 0rem;
@@ -1383,10 +2025,16 @@ th {
   flex-direction: column;
   gap: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .Nblogs__cnt--box {
+    width: 100%;
+    gap: 0rem;
+  }
+}
 .Nblogs__cnt--box--blog-col {
   width: 100%;
-  height: 13.8rem;
-  padding: 17px;
+  height: 19rem;
+  padding: 16px 20px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1019607843);
   border-radius: 16px;
@@ -1396,31 +2044,40 @@ th {
   align-items: center;
   gap: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .Nblogs__cnt--box--blog-col {
+    height: 24rem;
+    margin-top: 4rem;
+  }
+}
 .Nblogs__cnt--box--blog-col .Nblogs-img {
-  width: 24rem;
+  width: 40rem;
   height: 100%;
   background-color: aqua;
 }
 .Nblogs__cnt--box--blog-col .Nblogs-text {
   width: auto;
+  height: 100%;
 }
 .Nblogs__cnt--box--blog-col .Nblogs-text p {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
   letter-spacing: inherit;
-  line-height: inherit;
-  font-size: 1.6rem;
+  line-height: 3rem;
+  font-size: 2rem;
 }
 .Nblogs__cnt--box--blog-col .Nblogs-text--day {
+  margin-bottom: 1.5rem;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   letter-spacing: inherit;
   line-height: inherit;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 .Nblogs__button {
   width: 80%;
   margin-top: 10rem;
+  margin-bottom: 20rem;
   display: flex;
   gap: 0rem;
   justify-content: flex-end;
@@ -1439,15 +2096,20 @@ th {
   height: 10rem;
   z-index: 2;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: inherit;
   line-height: inherit;
-  font-size: 3rem;
   color: #D16EFD;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .Nblogs__button .main-contact-btn button {
+    font-size: 3.5rem;
+    color: white;
+  }
 }
 .Nblogs__button .main-contact-btn button::after {
   content: ">";
@@ -1468,6 +2130,27 @@ th {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .Nblogs__button .main-contact-btn button::after {
+    font-size: 3.5rem;
+    content: ">";
+    width: 100%;
+    height: 9rem;
+    border-radius: 54px;
+    position: absolute;
+    border: solid 1px #D16EFD;
+    background-color: #D16EFD;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+    top: 50%;
+    left: 1%;
+    transition: width 0.2s;
+    transform: translate(0%, -50%);
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
 .Nblogs__button .main-contact-btn:hover button {
   color: white;
 }
@@ -1475,7 +2158,178 @@ th {
   content: ">";
   width: 100%;
   height: 9rem;
+  border-radius: 54px;
+  position: absolute;
+  border: solid 1px #D16EFD;
+  background-color: #D16EFD;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+  top: 50%;
+  left: 1%;
+  transition: width 0.2s;
+  transform: translate(0%, -50%);
+  padding-right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .Nblogs__button {
+    width: 90%;
+    justify-content: center;
+  }
+}
+
+.NContact {
+  width: 100vw;
+  height: 70rem;
+  margin: 0rem calc(50% - 50vw) 0;
+  padding: 0 8rem;
+  background: rgba(145, 144, 144, 0.356);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  gap: 0rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .NContact {
+    height: 100rem;
+    justify-content: space-around;
+  }
+}
+.NContact__title {
+  width: auto;
+  height: auto;
+  margin-top: 5rem;
+}
+.NContact__title .Ntitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.NContact__title .Ntitle h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  font-size: 6rem;
+  color: white;
+}
+.NContact__title .Ntitle p {
+  margin-top: 7px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  font-size: 1.6rem;
+  color: white;
+}
+.NContact__title .Ntitle span {
+  margin-top: 7px;
+  display: block;
+  width: 8.3rem;
+  height: 2px;
+  background: transparent linear-gradient(269deg, #8524D9 0%, #C348FA 100%) 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+}
+.NContact__text {
+  width: auto;
+  margin-top: 4rem;
+}
+.NContact__text p {
+  color: white;
+  text-align: center;
+  width: 60rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  letter-spacing: inherit;
+  line-height: 4rem;
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  .NContact__text p {
+    font-size: 4rem;
+    line-height: 8rem;
+  }
+  .NContact__text p br {
+    display: block;
+  }
+}
+.NContact__button {
+  margin-top: 3rem;
+}
+.NContact__button .main-contact-btn {
+  width: 37rem;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.NContact__button .main-contact-btn button {
+  width: 100%;
+  height: 10rem;
+  z-index: 2;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .NContact__button .main-contact-btn button {
+    font-size: 3.5rem;
+  }
+}
+.NContact__button .main-contact-btn button::after {
+  content: ">";
+  width: 9rem;
+  height: 9rem;
   font-size: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  border: solid 1px white;
+  top: 50%;
+  left: 1%;
+  z-index: -1;
+  transition: 0.2s;
+  transform: translate(0%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .NContact__button .main-contact-btn button::after {
+    font-size: 3.5rem;
+    content: ">";
+    width: 100%;
+    height: 9rem;
+    border-radius: 54px;
+    position: absolute;
+    border: solid 1px #D16EFD;
+    background-color: #D16EFD;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1607843137);
+    top: 50%;
+    left: 1%;
+    transition: width 0.2s;
+    transform: translate(0%, -50%);
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.NContact__button .main-contact-btn:hover button::after {
+  content: ">";
+  width: 100%;
+  height: 9rem;
   border-radius: 54px;
   position: absolute;
   border: solid 1px #D16EFD;

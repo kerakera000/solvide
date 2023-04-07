@@ -1,4 +1,4 @@
-@mixin newtitle($aligin:center,$justfit:center){
+@mixin newtitle($aligin:center,$justfit:center,$color:black){
     .Ntitle{
         display: flex;
         align-items: $aligin;
@@ -9,6 +9,7 @@
             font-weight: 600;
             letter-spacing: 2.4px;
             font-size: 6rem;
+            color: $color;
         }
         p{
             margin-top: 7px;
@@ -16,6 +17,7 @@
             font-weight: 700;
             letter-spacing: 0.64px;
             font-size: 1.6rem;
+            color: $color;
         }
         span{
             margin-top: 7px;

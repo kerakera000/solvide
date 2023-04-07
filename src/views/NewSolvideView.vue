@@ -5,6 +5,7 @@
     <NWorkComp/>
     <NBlogsComp/>
     <NContactComp/>
+    <NFooterComp/>
 </template>
 
 <script>
@@ -14,6 +15,7 @@
     import NWorkComp from '@/components/new-solvide/NWorkComp.vue';
     import NBlogsComp from '@/components/new-solvide/NBlogsComp.vue';
     import NContactComp from '@/components/new-solvide/NContactComp.vue';
+    import NFooterComp from '@/components/new-solvide/NFooterComp.vue';
 
     export default {
         name: 'HomeView',
@@ -24,6 +26,7 @@
             NWorkComp,
             NBlogsComp,
             NContactComp,
+            NFooterComp,
         },
     };
 </script>

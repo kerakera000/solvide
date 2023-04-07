@@ -1,0 +1,48 @@
+@use "../../../../foundation/base/f-font-family" as font;
+@use "../../../../foundation/mixin/f-flex" as flex;
+@use "../../../../foundation/class-mixin/f-newtitle" as title;
+@use "../../../../foundation/class-mixin/f-newbutton" as newbutton;
+
+.NContact{
+    width: 100vw;
+    height: 70rem;
+    margin: 0rem calc(50% - 50vw) 0;
+    padding: 0 8rem;
+    background: rgba(145, 144, 144, 0.356);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    @include flex.flex();
+    flex-direction: column;
+    @media screen and (max-width: 768px) {
+        height: 100rem;
+        justify-content: space-around;
+    }
+    &__title{
+        width: auto;
+        height: auto;
+        margin-top: 5rem;
+        @include title.newtitle($color:white);
+    }
+    &__text{
+        width: auto;
+        margin-top: 4rem;
+        p{
+            color: white;
+            text-align: center;
+            width: 60rem;
+            @include font.font-Notosan-Medium($lineHeight:4rem,$fontsize:2.4rem);
+            @media screen and (max-width: 768px) {
+                font-size: 4rem;
+                line-height: 8rem;
+                br{
+                    display: block;
+                }
+            }
+        }
+    }
+    &__button{
+        margin-top: 3rem;
+        @include newbutton.Newbutton();
+    }
+}

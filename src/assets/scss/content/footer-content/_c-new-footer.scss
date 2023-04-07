@@ -1,0 +1,164 @@
+@use "../../foundation/base/f-font-family" as font;
+@use "../../foundation/mixin/f-flex" as flex;
+
+.Nfooter{
+    height: 312px;
+    background: #434343f8 0% 0% no-repeat padding-box;
+    margin: 0rem calc(50% - 50vw) 0;
+    @include flex.flex();
+    flex-direction: column;
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        height: 140rem;
+        margin: 0rem calc(50% - 50vw) 0;
+    }
+    &__cnt{
+        width: 80%;
+        height: 88%;
+        @include flex.flex($justify-content:flex-start,$align-items:flex-start);
+        @media screen and (max-width: 768px) {
+            width: 95%;
+            gap: 8rem;
+            flex-direction: column;
+        }
+        &--logo-box{
+            width: auto;
+            margin-top: 6rem;
+            margin-right: auto;
+            @include flex.flex($justify-content:flex-start,$gap:2rem);
+            flex-direction: column;
+            @media screen and (max-width: 768px) {
+                align-items: flex-start;
+            }
+            .Nfooter-logo{
+                &--img{
+                    width: 21rem;
+                    height: 4rem;
+                    @media screen and (max-width: 768px) {
+                        width: 43rem;
+                        height: 8rem;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .Nfooter-sns{
+                @include flex.flex($gap:5rem);
+                &--box{
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 30px;
+                    background-color: white;
+                    cursor: pointer;
+                    @include flex.flex();
+                    @media screen and (max-width: 768px) {
+                        width: 8rem;
+                        height: 8rem;
+                    }
+                    img{
+                        width: 70%;
+                        height: 70%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        &--col{
+            margin-top: 7rem;
+            margin-right: 4.6rem;
+            @include flex.flex($gap:4.6rem,$align-items:flex-start);
+            @media screen and (max-width: 768px) {
+                margin: 0%;
+                width: 100%;
+                justify-content: space-around;
+            }
+            .Nfooter-text{
+                @include flex.flex($align-items:flex-start,$gap:1.8rem);
+                flex-direction: column;
+                @media screen and (max-width: 768px) {
+                    justify-content: flex-start;
+                    width: 50%;
+                    gap: 4rem;
+                }
+                h3{
+                    color: white;
+                    cursor: pointer;
+                    @include font.font-Notosan-Medium($fontsize:2.6rem);
+                    @media screen and (max-width: 768px) {
+                        font-size:4.2rem
+                    }
+                }
+                p{
+                    color: #E0E0E0;
+                    cursor: pointer;
+                    @include font.font-Notosan-Medium($fontsize:2.3rem);
+                    @media screen and (max-width: 768px) {
+                        font-size: 3.6rem;
+                    }
+                }
+            }
+            .col-row{
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    flex-direction: row;
+                    gap: 4.6rem;
+                    justify-content: space-around;
+                    h3{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        &--gotop{
+            margin-left: auto;
+            @media screen and (max-width: 768px) {
+                margin-right: 6rem;
+            }
+            button{
+                width: 9rem;
+                height: 9rem;
+                margin-top: 8rem;
+                border: solid 1px white;
+                border-radius: 50%;
+                position: relative;
+                transition: 0.1s;
+                @media screen and (max-width: 768px) {
+                    width: 18rem;
+                    height: 18rem;
+                    border: solid 1px #D16EFD;
+                    background: #D16EFD 0% 0% no-repeat padding-box;
+                }
+                &::after{
+                    content: "^";
+                    color: white;
+                    font-size: 3rem;
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    @media screen and (max-width: 768px) {
+                        font-size: 8rem;
+                    }
+                }
+                &:hover{
+                    transition: 0.1s;
+                    border: solid 1px #D16EFD;
+                    background: #D16EFD 0% 0% no-repeat padding-box;
+                }
+            }
+        }
+    }
+    &__inc{
+        width: 100%;
+        height: 12%;
+        background-color:#222222;
+        @include flex.flex();
+        p{
+            color: white;
+            @include font.font-Notosan-Regular($fontsize:1.2rem);
+        }
+    }
+}

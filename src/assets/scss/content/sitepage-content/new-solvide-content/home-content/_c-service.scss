@@ -6,7 +6,7 @@
 .Nservice{
     width: 100vw;
     margin: 0rem calc(50% - 50vw) 0;
-    background-color: white;
+    background-color: #F5F5F5;
     @include flex.flex($justify-content:flex-start);
     flex-direction: column;
     &__title{
@@ -21,9 +21,15 @@
         margin-top: 3rem;
         @include flex.flex();
         flex-direction: column;
+        @media screen and (max-width: 768px) {
+            gap: 6rem;
+        }
         &--col{
             width: 90%;
             @include flex.flex($gap:2rem);
+            @media screen and (max-width: 768px) {
+                display: contents;
+            }
             .fNservice{
                 width: 50%;
                 height: 40rem;
@@ -33,6 +39,9 @@
                 background-position: 90%;
                 background-color: #302F3D;
                 @include flex.flex($align-items:flex-end);
+                @media screen and (max-width: 768px) {
+                    width: 90%;
+                }
                 &__text{
                     width: 70%;
                     margin-left: 2.4rem;
@@ -66,10 +75,15 @@
                         position: relative;
                         z-index: 1;
                         transition: 0.3s;
+                        @media screen and (max-width: 768px) {
+                            width: 8rem;
+                            height: 8rem;
+                            border: 2px solid #D16EFD;
+                        }
                     }
                     button:hover{
                         background-color: #D16EFD;
-                        border: 3px solid white;
+                        border: 2px solid white;
                         transition: 0.3s;
                     }
                     button::after{
