@@ -43,6 +43,10 @@
                 flex-direction: column;
                 text-shadow: 0px 6px 6px #0000001A;
                 @include font.font-Oswald-Bold($fontsize:7rem,$letterSpacing:2.4px,$lineHeight:8.8rem);
+                @media screen and (max-width: 768px) {
+                    line-height: 12rem;
+                    font-size: 10rem;
+                }
             }
         }
     }

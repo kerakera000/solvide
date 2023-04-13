@@ -1,0 +1,158 @@
+@use "../../foundation/base/f-font-family" as font;
+@use "../../foundation/class-mixin/f-newbutton" as newbutton;
+@use "../../foundation/mixin/f-flex" as flex;
+
+.Newheader{
+    width: 100%;
+    height: 9rem;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    z-index: 999;
+    @include flex.flex();
+    @media screen and (max-width: 768px) {
+        height: 15rem;
+    }
+    &__cnt{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        @include flex.flex();
+        &--box{
+            width: 100%;
+            padding: 0 16rem 0 6rem;
+            @include flex.flex($justify-content:space-between);
+            &--title{
+                .title-box{
+                    display: block;
+                    width: 24rem;
+                    height: 4rem;
+                    @media screen and (max-width: 768px) {
+                        width: 30rem;
+                        height: 5rem;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &--contact{
+                @include flex.flex($gap:8px);
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+                p{
+                    color: white;
+                    @include font.font-Notosan-Bold($fontsize:2rem);
+                }
+            }
+        }
+        &--nav{
+            right: 2%;
+            top: 50%;
+            transform: translate(0%,-50%);
+            position: absolute;
+            height: 8rem;
+            width: 8rem;
+            // width: 100rem;
+            border-radius: 50px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 4px 10px #00000029;
+            z-index: 10;
+            transition: 0.2s;
+            @include flex.flex($justify-content:space-between);
+            @media screen and (max-width: 768px) {
+                width: 11rem;
+                height: 11rem;
+            }
+            .Newnav-list{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                white-space: nowrap;
+                opacity: 0;
+                pointer-events: none;
+                @include font.font-Notosan-Bold($fontsize:2rem);
+            }
+        }
+        &--button{
+            right: 3%;
+            top: 50%;
+            transform: translate(0%,-50%);
+            position: absolute;
+            height: 4rem;
+            width: 4rem;
+            @include flex.flex();
+            z-index: 10;
+            @media screen and (max-width: 768px) {
+                right: 4%;
+                height: 7rem;
+                width: 7rem;
+            }
+            .Newheader-spanbox{
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                @include flex.flex($justify-content:space-around,$align-items:center);
+                position: relative;
+                span{
+                    width: 4rem;
+                    height: 2px;
+                    display: block;
+                    transition: 0.2s;
+                    transform-origin:center;
+                    background: transparent linear-gradient(93deg, #8524D9 0%, #C348FA 23%, #31C4E6 100%) 0% 0% no-repeat padding-box;
+                    @media screen and (max-width: 768px) {
+                        width: 6rem;
+                        height: 1px;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .New-nav-hover{
+                width: auto;
+                height: auto;
+                &:hover{
+                    .Newheader__cnt--nav{
+                        transition: 0.2s;
+                        width: 100rem;
+                        // border-radius: 35px;
+                        padding: 0 10rem 0 5rem;
+                        .Newnav-list{
+                            color: black;
+                            opacity: 1;
+                            position: static;
+                            transform: translate(0,0);
+                            pointer-events: all;
+                            transition: 0.4s;
+                        }
+                    }
+                    .Newheader__cnt--button{
+                        .Newheader-spanbox{
+                            span{
+                                position: absolute;
+                                top: 50%;
+                                left: 0%;
+                                transform: translate(-50%,-50%);
+                            }
+                            .span1{
+                                transform: rotate(44deg);
+                            }
+                            .span2{
+                                width: 0%;
+                                opacity: 0;
+                            }
+                            .span3{
+                                transform: rotate(-44deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -86,7 +86,7 @@
                 h3{
                     color: white;
                     cursor: pointer;
-                    @include font.font-Notosan-Medium($fontsize:2.6rem);
+                    @include font.font-Notosan-Medium($fontsize:2rem);
                     @media screen and (max-width: 768px) {
                         font-size:4.2rem
                     }
@@ -94,7 +94,7 @@
                 p{
                     color: #E0E0E0;
                     cursor: pointer;
-                    @include font.font-Notosan-Medium($fontsize:2.3rem);
+                    @include font.font-Notosan-Medium($fontsize:1.8rem);
                     @media screen and (max-width: 768px) {
                         font-size: 3.6rem;
                     }

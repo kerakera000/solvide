@@ -22,7 +22,7 @@
     import FooterComp from '@/components/solvide/FooterComp.vue';
 
     export default {
-        name: 'HomeView',
+        name: 'solvide-kokonara',
         components: {
             HeaderComp,
             KVComp,

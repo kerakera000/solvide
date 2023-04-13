@@ -1,4 +1,5 @@
 <template>
+    <NHeaderComp/>
     <NKVComp/>
     <NAbout/>
     <NAService/>
@@ -16,10 +17,12 @@
     import NBlogsComp from '@/components/new-solvide/NBlogsComp.vue';
     import NContactComp from '@/components/new-solvide/NContactComp.vue';
     import NFooterComp from '@/components/new-solvide/NFooterComp.vue';
+    import NHeaderComp from '@/components/new-solvide/NheaderComp.vue';
 
     export default {
-        name: 'HomeView',
+        name: 'Home-page',
         components: {
+            NHeaderComp,
             NKVComp,
             NAbout,
             NAService,
