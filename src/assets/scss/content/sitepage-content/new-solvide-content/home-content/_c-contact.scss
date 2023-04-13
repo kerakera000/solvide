@@ -30,7 +30,7 @@
         p{
             color: white;
             text-align: center;
-            width: 60rem;
+            width: 90rem;
             @include font.font-Notosan-Medium($lineHeight:4rem,$fontsize:2.4rem);
             @media screen and (max-width: 768px) {
                 font-size: 4rem;

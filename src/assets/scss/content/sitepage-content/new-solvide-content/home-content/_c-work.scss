@@ -34,7 +34,7 @@
             flex-direction: column;
             @media screen and (max-width: 768px) {
                 flex-direction: column;
-                width: 80%;
+                width: 90%;
                 height: 50rem;
                 margin-bottom: 8rem;
             }
@@ -83,8 +83,15 @@
         margin-top: 5.5rem;
         @include flex.flex();
         flex-direction: column;
+        @media screen and (max-width: 768px) {
+            margin-top: 0%;
+        }
         p{
             @include font.font-Notosan-Medium($lineHeight:3rem,$fontsize:2.4rem);
+            @media screen and (max-width: 768px) {
+                font-size: 4rem;
+                line-height: 7rem;
+            }
         }
     }
     &__button{

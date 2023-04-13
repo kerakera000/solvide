@@ -51,15 +51,24 @@
                     span{
                         display: block;
                         color: #C348FA;
-                        @include font.font-Oswald-SemiBold($fontsize:2.8rem);
+                        @include font.font-Oswald-SemiBold($fontsize:3rem);
+                        @media screen and (max-width: 768px) {
+                            font-size: 6rem;
+                        }
                     }
                     h3{
                         color: white;
                         @include font.font-Oswald-SemiBold($fontsize:4rem);
+                        @media screen and (max-width: 768px) {
+                            font-size: 5rem;
+                        }
                     }
                     p{
                         color: white;
                         @include font.font-Notosan-Bold($fontsize:1.6rem);
+                        @media screen and (max-width: 768px) {
+                            font-size: 2.5rem;
+                        }
                     }
                 }
                 &__button{
@@ -76,9 +85,11 @@
                         z-index: 1;
                         transition: 0.3s;
                         @media screen and (max-width: 768px) {
-                            width: 8rem;
-                            height: 8rem;
+                            width: 12rem;
+                            height: 12rem;
                             border: 2px solid #D16EFD;
+                            background-color: #D16EFD;
+                            border-radius: 6rem;
                         }
                     }
                     button:hover{
@@ -96,6 +107,10 @@
                         font-size: 2.5rem;
                         transform: translate(-50%,-50%);
                         transition: 0.3s;
+                        @media screen and (max-width: 768px) {
+                            font-size: 4rem;
+                            color: white;
+                        }
                     }
                     button:hover::after{
                         transition: 0.3s;

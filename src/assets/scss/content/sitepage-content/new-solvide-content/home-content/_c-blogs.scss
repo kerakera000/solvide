@@ -36,8 +36,9 @@
             gap: 1.5rem;
             @media screen and (max-width: 768px) {
                 width: 80%;
-                font-size: 2.5rem;
+                font-size: 3.5rem;
                 flex-direction: row;
+                gap: 4rem;
             }
         }
         &--box{
@@ -60,23 +61,39 @@
                 @include flex.flex();
                 gap: 2rem;
                 @media screen and (max-width: 768px) {
-                    height: 24rem;
-                    margin-top: 4rem;
+                    height: auto;
+                    margin-top: 8rem;
+                    flex-direction: column;
                 }
                 .Nblogs-img{
                     width: 40rem;
                     height: 100%;
                     background-color: aqua;
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        height: 36rem;
+                    }
                 }
                 .Nblogs-text{
                     width: auto;
                     height: 100%;
+                    @media screen and (max-width: 768px) {
+                        width: 80rem;
+                        height: auto;
+                    }
                     p{
                         @include font.font-Notosan-Medium($fontsize:2rem,$lineHeight:3rem);
+                        @media screen and (max-width: 768px) {
+                            font-size: 4rem;
+                            line-height: 4.5rem;
+                        }
                     }
                     &--day{
                         margin-bottom: 1.5rem;
                         @include font.font-Oswald-Medium($fontsize:2.2rem);
+                        @media screen and (max-width: 768px) {
+                            font-size: 4rem;
+                        }
                     }
                 }
             }
