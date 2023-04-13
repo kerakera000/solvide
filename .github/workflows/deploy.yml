@@ -1,10 +1,10 @@
-name: Build React on S3
+name: Build vue on S3
 on:
   push:
       branches:
         - master
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -14,11 +14,10 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build  # React ビルド
+        run: npm run build
 
-      - name: Deploy  # S3にデプロイ 
+      - name: Deploy  # S3にデプロイ
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: |
-          aws s3 cp --recursive --region ap-northeast-1 build s3://solvide-backet-9292
+        run: aws s3 cp --recursive --region ap-northeast-1 dist/ s3:// solvide-backet-9292
