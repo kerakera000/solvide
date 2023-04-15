@@ -1,0 +1,76 @@
+@use "../../../../foundation/base/f-font-family" as font;
+@use "../../../../foundation/class-mixin/f-newtitle" as title;
+@use "../../../../foundation/mixin/f-flex" as flex;
+
+.NserviceKV{
+    width: 100vw;
+    height: 100vh;
+    margin: 0rem calc(50% - 50vw) 0;
+    padding: 0 8rem;
+    background-color: #F5F5F5;
+    @include flex.flex($justify-content:flex-start);
+    flex-direction: column;
+    &__title{
+        width: 99%;
+        height: auto;
+        margin-top: 16rem;
+        @include flex.flex($justify-content:flex-start);
+        @include title.newtitle($justfit:flex-start,$aligin:flex-start);
+        @media screen and (max-width: 768px) {
+            width: 90%;
+        }
+    }
+    &__content{
+        width: 100%;
+        height: 100%;
+        margin-top: 5rem;
+        @include flex.flex($align-items:flex-start,$justify-content:flex-end);
+        &--text{
+            width:75%;
+            height: 100%;
+            h2{
+                @include font.font-Oswald-SemiBold($fontsize:8.8rem,$letterSpacing:3.5px);
+                background-image: linear-gradient(to right, gray, rgb(153, 0, 255), gray, rgb(153, 0, 255), gray);
+                background-size: 500%;
+                animation: color-change 6s linear infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h3{
+                margin-top: 2rem;
+                @include font.font-Notosan-Bold($fontsize:4rem);
+                span{
+                    color: #C348FA;
+                }
+            }
+            p{
+                width: 66rem;
+                margin-top: 2rem;
+                @include font.font-Notosan-Medium($fontsize:2rem,$lineHeight:4rem);
+            }
+        }
+    }
+    &__nav{
+        top: 40%;
+        left: 5%;
+        position: fixed;
+        z-index: 999;
+        &--list{
+            @include flex.flex($justify-content:flex-start,$align-items:flex-start,$gap:3rem);
+            flex-direction: column;
+            li{
+                list-style: circle;
+                @include font.font-Notosan-Bold($fontsize:2rem);
+            }
+        }
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+}

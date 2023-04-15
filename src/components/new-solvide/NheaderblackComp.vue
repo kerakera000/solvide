@@ -1,19 +1,19 @@
 <template>
-    <header class="Newheader">
-        <div class="Newheader__cnt">
-            <div class="Newheader__cnt--box">
-            <h1 class="Newheader__cnt--box--title">
+    <header class="Newheaderb">
+        <div class="Newheaderb__cnt">
+            <div class="Newheaderb__cnt--box">
+            <h1 class="Newheaderb__cnt--box--title">
                 <router-link to="/" class="title-box">
                     <img src="../../assets/new-solvide-images/logo-images/logo.png" alt="">
                 </router-link>
             </h1>
-            <div class="Newheader__cnt--box--contact">
+            <div class="Newheaderb__cnt--box--contact">
                 <img src="../../assets/new-solvide-images/home-images/header-images/feather-mail.png" alt="">
                 <p>お問い合わせ</p>
             </div>
             </div>
             <div class="New-nav-hover">
-                <nav class="Newheader__cnt--nav">
+                <nav class="Newheaderb__cnt--nav">
                 <router-link to="/solvide-policy" class="Newnav-list Nl1">私たちについて</router-link>
                 <router-link to="/solvide-service" class="Newnav-list Nl2">サービス内容</router-link>
                 <router-link to="/" class="Newnav-list Nl3">ブログ</router-link>
@@ -34,7 +34,7 @@
 
 <script>
     export default {
-        name: 'NHeaderComp',
+        name: 'NHeaderbComp',
     }
 </script>
 

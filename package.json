@@ -13,6 +13,7 @@
     "microcms-js-sdk": "^2.3.2",
     "swiper": "^9.1.0",
     "vue": "^3.2.13",
+    "vue-head": "^2.2.0",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
   },

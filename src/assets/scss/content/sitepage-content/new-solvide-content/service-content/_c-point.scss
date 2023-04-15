@@ -1,0 +1,64 @@
+@use "../../../../foundation/base/f-font-family" as font;
+@use "../../../../foundation/class-mixin/f-newtitle" as title;
+@use "../../../../foundation/mixin/f-flex" as flex;
+
+.NSPoint{
+    width: 100vw;
+    height: auto;
+    margin: 0rem calc(50% - 50vw) 0;
+    padding: 0 8rem;
+    background-color: #F5F5F5;
+    @include flex.flex($align-items:flex-end,$justify-content:flex-start,$gap:10rem);
+    flex-direction: column;
+    &__content{
+        width: 77%;
+        @include flex.flex($justify-content:flex-start,$gap:8rem,$align-items:flex-start);
+        &--img{
+            width: 50rem;
+            height: 32rem;
+            border-radius: 50px;
+            background-color: #272727;
+            @include flex.flex();
+            div{
+                width: 26rem;
+                height: 26rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .NSPimg2{
+                width: 30rem;
+                height: 30rem;
+                img{
+                    scale: 1.3;
+                }
+            }
+        }
+        &--text{
+            padding-top: 2rem;
+            width: 40%;
+            height: 100%;
+            @include flex.flex($justify-content:flex-start,$align-items:flex-start,$gap:1.3rem);
+            flex-direction: column;
+            h3{
+                width: 11rem;
+                height: 3.7rem;
+                background-color: #C348FA;
+                position: relative;
+                color: white;
+                z-index: 1;
+                border-radius: 30px;
+                @include flex.flex();
+                @include font.font-Oswald-Medium($fontsize:2rem,$letterSpacing:1.2px);
+            }
+            p{
+                @include font.font-Notosan-Bold($fontsize:2.2rem,$letterSpacing:1.2px);
+            }
+            .NSpoint-subT{
+                @include font.font-Notosan-Medium($fontsize:2rem,$lineHeight:2.8rem,$letterSpacing:1.2px);
+            }
+        }
+    }
+}

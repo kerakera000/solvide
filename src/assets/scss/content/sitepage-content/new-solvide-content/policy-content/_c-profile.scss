@@ -1,0 +1,46 @@
+@use "../../../../foundation/base/f-font-family" as font;
+@use "../../../../foundation/class-mixin/f-newtitle" as title;
+@use "../../../../foundation/mixin/f-flex" as flex;
+
+.NPprofille{
+    width: 100vw;
+    height: 132rem;
+    margin: 0rem calc(50% - 50vw) 0;
+    padding: 0 8rem;
+    background-color: white;
+    @include flex.flex($justify-content:flex-start);
+    flex-direction: column;
+    &__title{
+        width: 60%;
+        height: auto;
+        margin-top: 10rem;
+        @include flex.flex($justify-content:flex-start);
+        @include title.newtitle($justfit:flex-start,$aligin:flex-start);
+        @media screen and (max-width: 768px) {
+            width: 90%;
+        }
+    }
+    &__content{
+        width: 60%;
+        margin-top: 5rem;
+        .line{
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: transparent linear-gradient(270deg, #8524D9 0%, #C348FA 100%) 0% 0% no-repeat padding-box;
+        }
+        .NPprofille-col{
+            width: 100%;
+            height: 15rem;
+            @include flex.flex($justify-content:flex-start);
+            h3{
+                width: 30rem;
+                @include font.font-Notosan-Bold($fontsize:1.8rem);
+            }
+            p{
+                width: 40rem;
+                @include font.font-Notosan-Medium($fontsize:1.8rem);
+            }
+        }
+    }
+}

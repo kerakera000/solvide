@@ -20,7 +20,7 @@
     import NHeaderComp from '@/components/new-solvide/NheaderComp.vue';
 
     export default {
-        name: 'Home-page',
+        name: 'solvide-page',
         components: {
             NHeaderComp,
             NKVComp,
@@ -33,7 +33,3 @@
         },
     };
 </script>
-
-<style lang="scss">
-    @import "/src/assets/css/new-solvide.scss";
-</style>

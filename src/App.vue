@@ -30,5 +30,6 @@
 </script>
 
 <style lang="scss">
-    
+    @import "/src/assets/css/main.scss";
+    @import "/src/assets/css/new-solvide.scss";
 </style>
