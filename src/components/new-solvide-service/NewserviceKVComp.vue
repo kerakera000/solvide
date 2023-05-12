@@ -25,7 +25,6 @@
                 <li>制作フロー</li>
             </ul>
         </div>
-        <div class="NserviceKV-ball"></div>
     </section>
 </template>
 

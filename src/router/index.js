@@ -10,7 +10,7 @@ const routes = [
     name: 'solvide',
     component: NewSolvideView,
     meta: {
-      title: 'ソルバイド | Web制作でお悩み解決 | 埼玉県さいたま市のWeb制作グループ',
+      title: 'ソルバイド・ホームページ制作',
       metaTags: [
         {
           name: 'description',
@@ -47,7 +47,7 @@ const routes = [
     name: 'solvide-policy',
     component: NewSolvidePolicy,
     meta: {
-      title: 'ソルバイド・ポリシー | Web制作でお悩み解決 | 埼玉県さいたま市のWeb制作グループ',
+      title: '私たちについて - ソルバイド',
       metaTags: [
         {
           name: 'description',
@@ -84,7 +84,7 @@ const routes = [
     name: 'solvide-service',
     component: NewSolService,
     meta: {
-      title: 'ソルバイド・サービス内容 | Web制作でお悩み解決 | 埼玉県さいたま市のWeb制作グループ',
+      title: 'ソルバイド・サービス内容',
       metaTags: [
         {
           name: 'description',
